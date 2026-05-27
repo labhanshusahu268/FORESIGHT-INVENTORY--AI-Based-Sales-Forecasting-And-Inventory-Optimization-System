@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Settings — ForeSight</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+<div class="bg-orb bg-orb-1"></div><div class="bg-orb bg-orb-2"></div><div class="bg-grid"></div>
+<div class="app-layout">
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="brand-icon"></div>
+      <div><div class="brand-name">ForeSight</div><div class="brand-tag">INVENTORY AI</div></div>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-group">
+        <span class="nav-group-label">Main</span>
+        <a href="/dashboard" class="nav-link"><span class="nav-icon"></span><span class="nav-text">Dashboard</span></a>
+        <a href="/inventory" class="nav-link"><span class="nav-icon"></span><span class="nav-text">Inventory</span></a>
+        <a href="/predict" class="nav-link"><span class="nav-icon"></span><span class="nav-text">AI Predict</span></a>
+        <a href="/reports" class="nav-link"><span class="nav-icon"></span><span class="nav-text">Reports</span></a>
+        <a href="/settings" class="nav-link active"><span class="nav-icon"></span><span class="nav-text">Settings</span></a>
+      </div>
+    </nav>
+        <div class="sidebar-account" id="sidebar-account">
+      <div class="loading" style="padding:16px 0;justify-content:center"><div class="spinner"></div></div>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <div class="topbar">
+      <div class="topbar-left">
+        <div class="page-title"> Settings</div>
+        <div class="page-sub">Manage your account, preferences and system settings</div>
+      </div>
+      <div class="topbar-right">
+        <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">☀️</button>
+        <div class="notif-btn" onclick="toggleNotifPanel()">🔔<div class="notif-dot" id="notif-dot" style="display:none"></div></div>
+      </div>
+    </div>
+
+    <div class="page-content fade-in">
+      <div class="g2">
+        <!-- LEFT COLUMN -->
+        <div style="display:flex;flex-direction:column;gap:20px">
+
+          <!-- Profile -->
+          <div class="card">
+            <div class="card-title"> Profile Settings</div>
+            <div class="card-sub">Update your personal and shop information</div>
+            <div id="profile-alert"></div>
+            <div style="display:flex;align-items:center;gap:16px;margin-bottom:24px">
+              <div id="profile-avatar" style="width:64px;height:64px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:700;color:#fff;flex-shrink:0">U</div>
+              <div>
+                <div style="font-weight:700;font-size:16px" id="profile-name">Loading...</div>
+                <div class="text-muted text-sm" id="profile-email">...</div>
+                <div class="text-xs" style="color:var(--accent);margin-top:4px" id="profile-role">User</div>
+              </div>
+            </div>
+            <div class="form-row-2">
+              <div class="form-group"><label class="form-label">Display Name</label><input class="form-control" id="s-username" placeholder="Your name"></div>
+              <div class="form-group"><label class="form-label">Shop Name</label><input class="form-control" id="s-shopname" placeholder="Your shop name"></div>
+            </div>
+            <div class="form-group"><label class="form-label">Business Type</label>
+              <select class="form-control" id="s-btype">
+                <option>Retail</option><option>Wholesale</option><option>FMCG Distributor</option>
+                <option>Electronics Shop</option><option>Fashion Boutique</option>
+                <option>Grocery Store</option><option>Agriculture Dealer</option><option>Stationery Shop</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Profile Color</label>
+              <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:4px">
+                <!-- ${['#6c63ff','#ff6b9d','#00d4ff','#00e676','#ffd93d','#ff5252','#f472b6','#a78bfa'].map(c => -->
+                  <!-- `<div onclick="selectColor('${c}')" data-color="${c}" style="width:32px;height:32px;border-radius:50%;background:${c};cursor:pointer;transition:.2s;border:3px solid transparent" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'"></div>`
+                ).join('')} -->
+              </div>
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="saveProfile()">Save Profile</button>
+          </div>
+
+          <!-- Change Password -->
+          <div class="card">
+            <div class="card-title"> Change Password</div>
+            <div class="card-sub">Update your login password</div>
+            <div id="pw-alert"></div>
+            <div class="form-group"><label class="form-label">Current Password</label><input class="form-control" id="pw-old" type="password" placeholder="••••••••"></div>
+            <div class="form-group"><label class="form-label">New Password</label><input class="form-control" id="pw-new" type="password" placeholder="Min 6 characters"></div>
+            <div class="form-group"><label class="form-label">Confirm New Password</label><input class="form-control" id="pw-confirm" type="password" placeholder="Repeat new password"></div>
+            <button class="btn btn-secondary btn-sm" onclick="changePassword()">Update Password</button>
+          </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div style="display:flex;flex-direction:column;gap:20px">
+
+          <!-- Preferences -->
+          <div class="card">
+            <div class="card-title"> Preferences</div>
+            <div class="card-sub">Customize your ForeSight experience</div>
+            <div id="pref-alert"></div>
+            <div class="form-row-2">
+              <div class="form-group">
+                <label class="form-label">Currency</label>
+                <select class="form-control" id="pref-currency">
+                  <option value="INR">₹ Indian Rupee (INR)</option>
+                  <option value="USD">$ US Dollar (USD)</option>
+                  <option value="EUR">€ Euro (EUR)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Default Season</label>
+                <select class="form-control" id="pref-season">
+                  <option value="None">None</option><option>Summer</option>
+                  <option>Winter</option><option>Rainy</option><option>Autumn</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Low Stock Alert Threshold (units)</label>
+              <input class="form-control" id="pref-threshold" type="number" placeholder="10" value="10">
+            </div>
+            <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:20px">
+              <label style="display:flex;align-items:center;justify-content:space-between;cursor:pointer">
+                <div>
+                  <div style="font-size:14px;font-weight:500">Low Stock Notifications</div>
+                  <div class="text-xs text-muted">Alert when products fall below threshold</div>
+                </div>
+                <div class="toggle-wrap">
+                  <input type="checkbox" id="pref-notif-stock" class="toggle-inp">
+                  <div class="toggle-track" onclick="toggleCheck('pref-notif-stock')"></div>
+                </div>
+              </label>
+              <label style="display:flex;align-items:center;justify-content:space-between;cursor:pointer">
+                <div>
+                  <div style="font-size:14px;font-weight:500">Prediction Notifications</div>
+                  <div class="text-xs text-muted">Alert when AI predictions are ready</div>
+                </div>
+                <div class="toggle-wrap">
+                  <input type="checkbox" id="pref-notif-pred" class="toggle-inp">
+                  <div class="toggle-track" onclick="toggleCheck('pref-notif-pred')"></div>
+                </div>
+              </label>
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="savePreferences()">Save Preferences</button>
+          </div>
+
+          <!-- Data Management -->
+          <div class="card">
+            <div class="card-title"> Data Management</div>
+            <div class="card-sub">Import, export and manage your inventory data</div>
+            <div style="display:flex;flex-direction:column;gap:12px">
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:14px;background:var(--surface2);border:1px solid var(--border);border-radius:10px">
+                <div><div style="font-size:14px;font-weight:500">Export Inventory</div><div class="text-xs text-muted">Download all products as CSV</div></div>
+                <button class="btn btn-secondary btn-sm" onclick="location.href='/api/reports/export-csv'">⬇ Download</button>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:14px;background:var(--surface2);border:1px solid var(--border);border-radius:10px">
+                <div><div style="font-size:14px;font-weight:500">Download PDF Report</div><div class="text-xs text-muted">Professional business report</div></div>
+                <button class="btn btn-secondary btn-sm" onclick="location.href='/reports'">📄 Reports</button>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:14px;background:var(--surface2);border:1px solid var(--border);border-radius:10px">
+                <div><div style="font-size:14px;font-weight:500">Retrain ML Models</div><div class="text-xs text-muted">Train AI on your specific data</div></div>
+                <button class="btn btn-secondary btn-sm" onclick="retrainModels()">🤖 Retrain</button>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:14px;background:rgba(255,82,82,0.07);border:1px solid rgba(255,82,82,0.2);border-radius:10px">
+                <div><div style="font-size:14px;font-weight:500;color:var(--danger)">Delete All Inventory</div><div class="text-xs text-muted">Permanently remove all products</div></div>
+                <button class="btn btn-danger btn-sm" onclick="confirmDeleteAll()">🗑 Delete All</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- System Info -->
+          <div class="card">
+            <div class="card-title">ℹ️ System Information</div>
+            <div class="card-sub">ForeSight version and ML model details</div>
+            <div style="display:flex;flex-direction:column;gap:10px">
+              <div class="result-row"><span class="result-label">Version</span><span class="badge badge-purple">v2.0 Production</span></div>
+              <div class="result-row"><span class="result-label">ML Models</span><span class="text-sm" style="color:var(--success)">XGBoost + RandomForest ✅</span></div>
+              <div class="result-row"><span class="result-label">Training Data</span><span class="text-sm">6,000+ records, 20+ features</span></div>
+              <div class="result-row"><span class="result-label">Festivals Supported</span><span class="text-sm">25+ Indian festivals</span></div>
+              <div class="result-row"><span class="result-label">Categories</span><span class="text-sm">FMCG, Electronics, Fashion, Grocery, Stationery, Agriculture</span></div>
+              <div class="result-row" id="sys-model-metrics"><span class="result-label">Model Metrics</span><span class="text-xs text-muted">Loading...</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<div id="toast-box" class="toast-box"></div>
+
+<style>
+.toggle-wrap { position:relative; }
+.toggle-inp { display:none; }
+.toggle-track {
+  width:44px; height:24px; background:var(--surface3); border-radius:99px; cursor:pointer;
+  transition:.3s; position:relative; border:1px solid var(--border);
+}
+.toggle-track::after {
+  content:''; position:absolute; width:18px; height:18px; border-radius:50%;
+  background:#fff; top:2px; left:2px; transition:.3s; box-shadow:0 1px 3px rgba(0,0,0,.3);
+}
+.toggle-inp:checked + .toggle-track { background:var(--accent); border-color:var(--accent); }
+.toggle-inp:checked + .toggle-track::after { left:22px; }
+</style>
+
+<script src="/static/js/main.js"></script>
+<script>
+let _selectedColor = null;
+
+function selectColor(c) {
+  _selectedColor = c;
+  document.querySelectorAll('[data-color]').forEach(el => {
+    el.style.border = el.dataset.color === c ? '3px solid #fff' : '3px solid transparent';
+    el.style.transform = el.dataset.color === c ? 'scale(1.2)' : 'scale(1)';
+  });
+}
+
+function toggleCheck(id) {
+  const el = document.getElementById(id);
+  if (el) el.checked = !el.checked;
+}
+
+async function loadSettings() {
+  try {
+    const u = await loadUser();
+    if (u) {
+      document.getElementById('profile-name').textContent  = u.username;
+      document.getElementById('profile-email').textContent = u.email;
+      document.getElementById('profile-role').textContent  = u.role === 'admin' ? '👑 Administrator' : '👤 User';
+      document.getElementById('s-username').value  = u.username;
+      document.getElementById('s-shopname').value  = u.shop_name;
+      const btEl = document.getElementById('s-btype');
+      if (btEl && u.business_type) Array.from(btEl.options).forEach(o => { if(o.value===u.business_type) o.selected=true; });
+      if (u.avatar_color) {
+        document.getElementById('profile-avatar').style.background = u.avatar_color;
+        selectColor(u.avatar_color);
+      }
+    }
+    const prefs = await api('/api/settings/');
+    if (prefs) {
+      const curr = document.getElementById('pref-currency');
+      if (curr && prefs.currency) Array.from(curr.options).forEach(o => { if(o.value===prefs.currency) o.selected=true; });
+      const seas = document.getElementById('pref-season');
+      if (seas && prefs.default_season) Array.from(seas.options).forEach(o => { if(o.value===prefs.default_season) o.selected=true; });
+      const thr = document.getElementById('pref-threshold');
+      if (thr) thr.value = prefs.low_stock_threshold || 10;
+      const ns = document.getElementById('pref-notif-stock');
+      if (ns) ns.checked = prefs.notify_low_stock !== 0;
+      const np = document.getElementById('pref-notif-pred');
+      if (np) np.checked = prefs.notify_predictions !== 0;
+    }
+    // Model metrics
+    const meta = await api('/api/predict/metadata');
+    const metricsEl = document.getElementById('sys-model-metrics');
+    if (metricsEl && meta.model_metrics) {
+      const m = meta.model_metrics;
+      metricsEl.innerHTML = `<span class="result-label">Model Metrics</span><span class="text-xs" style="color:var(--success)">Sales R²: ${m.sales?.r2?.toFixed(3)||'—'} | Profit R²: ${m.profit?.r2?.toFixed(3)||'—'}</span>`;
+    }
+  } catch(e) { toast('Failed to load settings: ' + e.message, 'error'); }
+}
+
+async function saveProfile() {
+  const data = {
+    username:      document.getElementById('s-username').value.trim(),
+    shop_name:     document.getElementById('s-shopname').value.trim(),
+    business_type: document.getElementById('s-btype').value,
+  };
+  if (_selectedColor) data.avatar_color = _selectedColor;
+  const alertEl = document.getElementById('profile-alert');
+  try {
+    await api('/api/auth/update', 'PUT', data);
+    alertEl.innerHTML = '<div class="alert alert-success"> Profile updated!</div>';
+    await loadUser();
+    if (_selectedColor) document.getElementById('profile-avatar').style.background = _selectedColor;
+    setTimeout(() => alertEl.innerHTML = '', 3000);
+  } catch(e) {
+    alertEl.innerHTML = `<div class="alert alert-error">${e.message}</div>`;
+  }
+}
+
+async function changePassword() {
+  const old = document.getElementById('pw-old').value;
+  const nw  = document.getElementById('pw-new').value;
+  const cnf = document.getElementById('pw-confirm').value;
+  const alertEl = document.getElementById('pw-alert');
+  if (!old || !nw) { alertEl.innerHTML = '<div class="alert alert-error">All fields required</div>'; return; }
+  if (nw !== cnf)  { alertEl.innerHTML = '<div class="alert alert-error">Passwords do not match</div>'; return; }
+  if (nw.length < 6) { alertEl.innerHTML = '<div class="alert alert-error">Password must be ≥6 characters</div>'; return; }
+  try {
+    await api('/api/settings/change-password', 'POST', { old_password: old, new_password: nw });
+    alertEl.innerHTML = '<div class="alert alert-success"> Password changed!</div>';
+    ['pw-old','pw-new','pw-confirm'].forEach(id => { document.getElementById(id).value = ''; });
+    setTimeout(() => alertEl.innerHTML = '', 3000);
+  } catch(e) { alertEl.innerHTML = `<div class="alert alert-error">${e.message}</div>`; }
+}
+
+async function savePreferences() {
+  const data = {
+    currency:             document.getElementById('pref-currency').value,
+    default_season:       document.getElementById('pref-season').value,
+    low_stock_threshold:  parseInt(document.getElementById('pref-threshold').value) || 10,
+    notify_low_stock:     document.getElementById('pref-notif-stock').checked ? 1 : 0,
+    notify_predictions:   document.getElementById('pref-notif-pred').checked  ? 1 : 0,
+  };
+  try {
+    await api('/api/settings/', 'PUT', data);
+    const alertEl = document.getElementById('pref-alert');
+    alertEl.innerHTML = '<div class="alert alert-success"> Preferences saved!</div>';
+    setTimeout(() => alertEl.innerHTML = '', 3000);
+  } catch(e) { toast('Save failed: ' + e.message, 'error'); }
+}
+
+async function retrainModels() {
+  if (!confirm('Retrain ML models with your inventory data? This may take a few seconds.')) return;
+  toast('Retraining models...', 'info');
+  try {
+    const d = await api('/api/predict/retrain', 'POST');
+    toast(d.message, d.success ? 'success' : 'warning');
+  } catch(e) { toast(e.message, 'error'); }
+}
+
+async function confirmDeleteAll() {
+  const confirmed = prompt('Type DELETE to confirm removing all inventory data:');
+  if (confirmed !== 'DELETE') { toast('Cancelled', 'info'); return; }
+  try {
+    // Get all items and delete them one by one
+    const { items } = await api('/api/inventory/');
+    for (const item of items) {
+      await api(`/api/inventory/${item.id}`, 'DELETE');
+    }
+    toast(` Deleted ${items.length} products`, 'success');
+  } catch(e) { toast('Delete failed: ' + e.message, 'error'); }
+}
+
+document.addEventListener('DOMContentLoaded', loadSettings);
+</script>
+</body>
+</html>

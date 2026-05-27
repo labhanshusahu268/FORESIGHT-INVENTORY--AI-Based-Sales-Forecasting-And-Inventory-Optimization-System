@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Reports — ForeSight</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/main.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+</head>
+<body>
+<div class="bg-orb bg-orb-1"></div><div class="bg-orb bg-orb-2"></div><div class="bg-grid"></div>
+<div class="app-layout">
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="brand-icon"></div>
+      <div><div class="brand-name">ForeSight</div><div class="brand-tag">INVENTORY AI</div></div>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-group">
+        <span class="nav-group-label">Main</span>
+        <a href="/dashboard" class="nav-link"><span class="nav-icon"></span><span class="nav-text">Dashboard</span></a>
+        <a href="/inventory" class="nav-link"><span class="nav-icon"></span><span class="nav-text">Inventory</span></a>
+        <a href="/predict" class="nav-link"><span class="nav-icon"></span><span class="nav-text">AI Predict</span></a>
+        <a href="/reports" class="nav-link active"><span class="nav-icon"></span><span class="nav-text">Reports</span></a>
+        <a href="/settings" class="nav-link"><span class="nav-icon"></span><span class="nav-text">Settings</span></a>
+      </div>
+    </nav>
+        <div class="sidebar-account" id="sidebar-account">
+      <div class="loading" style="padding:16px 0;justify-content:center"><div class="spinner"></div></div>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <div class="topbar">
+      <div class="topbar-left">
+        <div class="page-title"> Reports & Analytics</div>
+        <div class="page-sub">Export PDF reports, view detailed charts and business insights</div>
+      </div>
+      <div class="topbar-right">
+        <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">☀️</button>
+        <div class="notif-btn" onclick="toggleNotifPanel()">🔔<div class="notif-dot" id="notif-dot" style="display:none"></div></div>
+        <button class="btn btn-secondary btn-sm" onclick="exportCSV()">⬇ Export CSV</button>
+        <button class="btn btn-primary btn-sm" onclick="exportPDF()"> Export PDF</button>
+      </div>
+    </div>
+
+    <div class="page-content fade-in">
+      <!-- Export Cards -->
+      <div class="g3 mb3">
+        <div class="card" style="text-align:center;padding:32px 24px;cursor:pointer;border:1px solid var(--border);transition:var(--transition)" onclick="exportPDF()" onmouseenter="this.style.borderColor='rgba(108,99,255,0.4)'" onmouseleave="this.style.borderColor='rgba(255,255,255,0.07)'">
+          <div style="font-size:48px;margin-bottom:16px"></div>
+          <div style="font-family:'Outfit',sans-serif;font-size:18px;font-weight:700;margin-bottom:8px">PDF Report</div>
+          <div class="text-muted text-sm">Professional report with summary, top products, season trends. Ready to share with investors or partners.</div>
+          <button class="btn btn-primary btn-sm" style="margin-top:16px" id="pdf-btn">Download PDF</button>
+        </div>
+        <div class="card" style="text-align:center;padding:32px 24px;cursor:pointer;border:1px solid var(--border);transition:var(--transition)" onclick="exportCSV()" onmouseenter="this.style.borderColor='rgba(0,230,118,0.4)'" onmouseleave="this.style.borderColor='rgba(255,255,255,0.07)'">
+          <div style="font-size:48px;margin-bottom:16px"></div>
+          <div style="font-family:'Outfit',sans-serif;font-size:18px;font-weight:700;margin-bottom:8px">CSV Export</div>
+          <div class="text-muted text-sm">Download your complete inventory data as CSV. Import into Excel, Google Sheets, or other tools.</div>
+          <button class="btn btn-success btn-sm" style="margin-top:16px">Download CSV</button>
+        </div>
+        <div class="card" style="text-align:center;padding:32px 24px">
+          <div style="font-size:48px;margin-bottom:16px"></div>
+          <div style="font-family:'Outfit',sans-serif;font-size:18px;font-weight:700;margin-bottom:8px">AI Insights</div>
+          <div class="text-muted text-sm">Auto-generated business insights based on your sales patterns, seasonal trends, and festival data.</div>
+          <button class="btn btn-secondary btn-sm" style="margin-top:16px" onclick="loadInsights()">Generate Insights</button>
+        </div>
+      </div>
+
+      <!-- AI Insights panel -->
+      <div id="insights-panel" style="display:none" class="mb3"></div>
+
+      <!-- Summary Stats -->
+      <div class="stats-grid mb3" id="report-stats">
+        <div class="stat-card c-purple"><div class="stat-label">Total Revenue</div><div class="stat-val purple" id="r-revenue">—</div><div class="stat-icon"></div></div>
+        <div class="stat-card c-green"><div class="stat-label">Total Profit</div><div class="stat-val green" id="r-profit">—</div><div class="stat-icon"></div></div>
+        <div class="stat-card c-yellow"><div class="stat-label">Avg Margin</div><div class="stat-val yellow" id="r-margin">—</div><div class="stat-icon"></div></div>
+        <div class="stat-card c-blue"><div class="stat-label">Total Investment</div><div class="stat-val blue" id="r-investment">—</div><div class="stat-icon"></div></div>
+      </div>
+
+      <!-- Charts Row 1 -->
+      <div class="g2 mb3">
+        <div class="card">
+          <div class="card-title"> Sales Trend Analysis</div>
+          <div class="card-sub">Monthly revenue and profit trajectory</div>
+          <div class="chart-wrap" style="height:280px"><canvas id="r-trend-chart"></canvas></div>
+        </div>
+        <div class="card">
+          <div class="card-title"> Category Revenue Distribution</div>
+          <div class="card-sub">Which categories drive the most revenue</div>
+          <div class="chart-wrap" style="height:280px"><canvas id="r-cat-chart"></canvas></div>
+        </div>
+      </div>
+
+      <!-- Charts Row 2 -->
+      <div class="g2 mb3">
+        <div class="card">
+          <div class="card-title"> Seasonal Trends</div>
+          <div class="card-sub">Revenue & profit by season</div>
+          <div class="chart-wrap" style="height:260px"><canvas id="r-season-chart"></canvas></div>
+        </div>
+        <div class="card">
+          <div class="card-title"> Festival Impact Analysis</div>
+          <div class="card-sub">Sales boost during Indian festivals</div>
+          <div class="chart-wrap" style="height:260px"><canvas id="r-festival-chart"></canvas></div>
+        </div>
+      </div>
+
+      <!-- Category trends over time -->
+      <div class="card mb3">
+        <div class="card-title">Category Trends Over Time</div>
+        <div class="card-sub">How each category performed month by month</div>
+        <div class="chart-wrap" style="height:300px"><canvas id="r-cattrend-chart"></canvas></div>
+      </div>
+
+      <!-- Top products table -->
+      <div class="card">
+        <div class="flex justify-between items-center mb3">
+          <div><div class="card-title"> Complete Product Performance</div><div class="card-sub">All products ranked by profit</div></div>
+        </div>
+        <div class="tbl-wrap">
+          <table class="tbl">
+            <thead><tr>
+              <th>#</th><th>Product</th><th>Category</th>
+              <th class="num">Units</th><th class="num">Revenue</th>
+              <th class="num">Profit</th><th>Margin</th><th>Season</th>
+            </tr></thead>
+            <tbody id="r-products-tbl">
+              <tr><td colspan="8"><div class="loading"><div class="spinner"></div></div></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<div id="toast-box" class="toast-box"></div>
+<script src="/static/js/main.js"></script>
+<script src="/static/js/reports.js"></script>
+</body>
+</html>

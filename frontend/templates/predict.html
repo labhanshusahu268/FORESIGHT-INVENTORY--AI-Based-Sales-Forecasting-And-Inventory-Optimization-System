@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AI Predict — ForeSight</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/main.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+/* ── Slider styles ── */
+.slider-group { margin-bottom:18px; }
+.slider-row { display:flex; align-items:center; gap:10px; }
+.slider-val {
+  font-family:'Outfit',sans-serif; font-size:16px; font-weight:800;
+  min-width:42px; text-align:center; color:var(--accent);
+  background:var(--surface2); border:1px solid var(--border);
+  border-radius:8px; padding:4px 8px;
+}
+input[type=range] {
+  flex:1; height:6px; border-radius:99px; outline:none;
+  cursor:pointer; accent-color:var(--accent);
+  background: linear-gradient(to right, var(--accent) 0%, var(--accent) 50%, var(--surface3) 50%, var(--surface3) 100%);
+}
+input[type=range]::-webkit-slider-thumb { width:18px; height:18px; }
+.slider-labels { display:flex; justify-content:space-between; font-size:10px; color:var(--text3); margin-top:3px; }
+</style>
+</head>
+<body>
+<div class="bg-orb bg-orb-1"></div><div class="bg-orb bg-orb-2"></div><div class="bg-grid"></div>
+<div class="app-layout">
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="brand-icon"></div>
+      <div><div class="brand-name">ForeSight</div><div class="brand-tag">INVENTORY AI</div></div>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-group">
+        <span class="nav-group-label">Main</span>
+        <a href="/dashboard" class="nav-link"><span class="nav-icon"></span><span class="nav-text">Dashboard</span></a>
+        <a href="/inventory" class="nav-link"><span class="nav-icon"></span><span class="nav-text">Inventory</span></a>
+        <a href="/predict" class="nav-link active"><span class="nav-icon"></span><span class="nav-text">AI Predict</span></a>
+        <a href="/reports" class="nav-link"><span class="nav-icon"></span><span class="nav-text">Reports</span></a>
+        <a href="/settings" class="nav-link"><span class="nav-icon"></span><span class="nav-text">Settings</span></a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-group-label">Prediction Tools</span>
+        <button class="nav-link" onclick="showTab('analyze')"><span class="nav-icon"></span><span class="nav-text">Full Analysis</span></button>
+        <button class="nav-link" onclick="showTab('budget')"><span class="nav-icon"></span><span class="nav-text">Budget Planner</span></button>
+        <button class="nav-link" onclick="showTab('history')"><span class="nav-icon"></span><span class="nav-text">History</span></button>
+      </div>
+    </nav>
+    <div class="sidebar-account" id="sidebar-account">
+      <div class="loading" style="padding:16px 0;justify-content:center"><div class="spinner"></div></div>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <div class="topbar">
+      <div class="topbar-left">
+        <div class="page-title">🔮 AI Demand Prediction</div>
+        <div class="page-sub">XGBoost + RandomForest | 20+ ML features | Festival & Season intelligence</div>
+      </div>
+      <div class="topbar-right">
+        <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">☀️</button>
+        <div class="notif-btn" onclick="toggleNotifPanel()">🔔<div class="notif-dot" id="notif-dot" style="display:none"></div></div>
+        <button class="btn btn-secondary btn-sm" onclick="retrainModels()">🔄 Retrain</button>
+      </div>
+    </div>
+
+    <div class="page-content fade-in">
+      <!-- Tab buttons -->
+      <div class="flex gap-3 mb3">
+        <button class="btn btn-primary" id="tab-analyze" onclick="showTab('analyze')"> Full Analysis</button>
+        <button class="btn btn-secondary" id="tab-budget" onclick="showTab('budget')"> Budget Planner</button>
+        <button class="btn btn-secondary" id="tab-history" onclick="showTab('history')"> Prediction History</button>
+      </div>
+
+      <!-- ═══ FULL ANALYSIS TAB ═══ -->
+      <div id="pane-analyze">
+        <div class="g2">
+          <!-- Input form -->
+          <div class="card">
+            <div class="card-title"> Prediction Parameters</div>
+            <div class="card-sub">Fill in product details for AI analysis</div>
+
+            <div class="form-group">
+              <label class="form-label">Product Name</label>
+              <input class="form-control" id="p-name" placeholder="e.g. Basmati Rice 5kg" list="p-prod-list">
+              <datalist id="p-prod-list"></datalist>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label class="form-label">Category *</label>
+                <select class="form-control" id="p-cat">
+                  <option>Grocery</option><option>FMCG</option><option>Electronics</option>
+                  <option>Fashion</option><option>Stationery</option><option>Agriculture</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Month</label>
+                <select class="form-control" id="p-month">
+                  <option value="1">January</option><option value="2">February</option>
+                  <option value="3">March</option><option value="4">April</option>
+                  <option value="5">May</option><option value="6">June</option>
+                  <option value="7">July</option><option value="8">August</option>
+                  <option value="9">September</option><option value="10">October</option>
+                  <option value="11">November</option><option value="12">December</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label class="form-label">Season</label>
+                <select class="form-control" id="p-season">
+                  <option value="None">None / General</option><option>Summer</option>
+                  <option>Winter</option><option>Rainy</option><option>Autumn</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Festival</label>
+                <select class="form-control" id="p-festival">
+                  <option value="None">None</option>
+                  <option>Diwali</option><option>Holi</option><option>Eid</option>
+                  <option>Christmas</option><option>Navratri</option><option>Dussehra</option>
+                  <option>Raksha Bandhan</option><option>Janmashtami</option><option>Onam</option>
+                  <option>Pongal</option><option>Makar Sankranti</option><option>New Year</option>
+                  <option>Valentine's Day</option><option>Independence Day</option>
+                  <option>Republic Day</option><option>Ganesh Chaturthi</option>
+                  <option>Chhath Puja</option><option>Baisakhi</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label class="form-label">Cost Price (₹) *</label>
+                <input class="form-control" id="p-cost" type="number" placeholder="180" oninput="updatePriceCalc()">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Selling Price (₹) *</label>
+                <input class="form-control" id="p-sell" type="number" placeholder="225" oninput="updatePriceCalc()">
+              </div>
+            </div>
+
+            <!-- Live margin preview -->
+            <div id="p-margin-preview" style="display:none;margin-bottom:16px;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:12px 16px">
+              <div style="display:flex;justify-content:space-around;text-align:center">
+                <div><div style="font-family:'Outfit',sans-serif;font-size:20px;font-weight:800;color:var(--accent)" id="p-prev-margin">₹0</div><div class="text-xs text-muted">Per Unit Profit</div></div>
+                <div><div style="font-family:'Outfit',sans-serif;font-size:20px;font-weight:800;color:var(--success)" id="p-prev-pct">0%</div><div class="text-xs text-muted">Margin</div></div>
+              </div>
+            </div>
+
+            <!-- Discount Slider -->
+            <div class="slider-group">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+                <label class="form-label" style="margin:0">Discount %</label>
+                <span class="slider-val" id="disc-val">0%</span>
+              </div>
+              <div class="slider-row">
+                <span class="text-xs text-muted">0%</span>
+                <input type="range" id="p-disc" min="0" max="50" step="1" value="0" oninput="updateSlider('p-disc','disc-val','%');updatePriceCalc()">
+                <span class="text-xs text-muted">50%</span>
+              </div>
+            </div>
+
+            <div class="form-row-3">
+              <div class="form-group">
+                <label class="form-label">Current Stock</label>
+                <input class="form-control" id="p-stock" type="number" placeholder="100" value="50">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Reorder Level</label>
+                <input class="form-control" id="p-reorder" type="number" placeholder="10" value="10">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Lead Time (days)</label>
+                <input class="form-control" id="p-lead" type="number" placeholder="3" value="3">
+              </div>
+            </div>
+
+            <!-- Supplier Reliability Slider -->
+            <div class="slider-group">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+                <label class="form-label" style="margin:0">Supplier Reliability</label>
+                <span class="slider-val" id="supp-val">0.90</span>
+              </div>
+              <div class="slider-row">
+                <span class="text-xs text-muted">0%</span>
+                <input type="range" id="p-supp" min="0" max="1" step="0.01" value="0.9" oninput="updateSlider('p-supp','supp-val','');updateSuppLabel()">
+                <span class="text-xs text-muted">100%</span>
+              </div>
+              <div id="supp-label" style="font-size:11px;color:var(--success);margin-top:4px;text-align:center">🟢 90% reliable — Good</div>
+            </div>
+
+            <button class="btn btn-primary w-full" id="analyze-btn" onclick="runAnalysis()" style="margin-top:4px">
+              🔮 Run AI Analysis
+            </button>
+          </div>
+
+          <!-- Results pane -->
+          <div id="result-pane">
+            <div class="card" style="height:100%">
+              <div class="empty-state" style="padding:80px 24px">
+                <div class="empty-state-icon">🔮</div>
+                <div class="empty-state-title">Ready to Predict</div>
+                <div class="empty-state-text">Fill in the form and click<br><strong>Run AI Analysis</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══ BUDGET TAB ═══ -->
+      <div id="pane-budget" style="display:none">
+        <div class="card mb3">
+          <div class="card-title"> Smart Budget Planner</div>
+          <div class="card-sub">Tell us your budget — AI allocates it for maximum ROI across your inventory</div>
+          <div class="form-row-3">
+            <div class="form-group">
+              <label class="form-label">Your Budget (₹) *</label>
+              <input class="form-control" id="b-budget" type="number" placeholder="100000">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Season</label>
+              <select class="form-control" id="b-season">
+                <option value="None">None</option><option>Summer</option><option>Winter</option>
+                <option>Rainy</option><option>Autumn</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Upcoming Festival</label>
+              <select class="form-control" id="b-festival">
+                <option value="None">None</option><option>Diwali</option><option>Holi</option>
+                <option>Eid</option><option>Christmas</option><option>Navratri</option>
+                <option>Dussehra</option><option>Raksha Bandhan</option>
+              </select>
+            </div>
+          </div>
+          <div class="alert alert-info" style="margin-bottom:16px;font-size:13px">
+            💡 Uses products from your inventory. <a href="/inventory" style="color:var(--accent)">Add products first</a> if needed.
+          </div>
+          <button class="btn btn-primary" id="budget-btn" onclick="runBudget()">📊 Generate Budget Plan</button>
+        </div>
+        <div id="budget-result"></div>
+      </div>
+
+      <!-- ═══ HISTORY TAB ═══ -->
+      <div id="pane-history" style="display:none">
+        <div class="card">
+          <div class="card-title"> Prediction History</div>
+          <div class="card-sub">Your recent AI predictions</div>
+          <div id="history-list"><div class="loading"><div class="spinner"></div>Loading...</div></div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<div id="toast-box" class="toast-box"></div>
+<script src="/static/js/main.js"></script>
+<script src="/static/js/predict.js"></script>
+</body>
+</html>

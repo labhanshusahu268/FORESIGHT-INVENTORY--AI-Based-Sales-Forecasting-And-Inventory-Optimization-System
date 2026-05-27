@@ -1,0 +1,401 @@
+id,product_name,category,cost_price,selling_price,discount_pct,units_sold,current_stock,reorder_level,lead_time_days,holding_cost,supplier_reliability,season,festival,margin_pct,revenue,profit,investment,month,year,day,day_of_week,week,quarter,is_weekend,is_festival,price_ratio,stock_buffer,date,shop_name,location,region
+0,Colgate 200g,FMCG,82,100,0,74,134,26,1,1.23,0.95,Summer,Baisakhi,21.95,7400.0,1332.0,6068,4,2025,5,5,1,2,1,1,1.22,108,2025-04-05,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+1,Vim Bar 200g,FMCG,25,32,0,83,212,24,4,0.38,0.9,Rainy,None,28.0,2656.0,581.0,2075,8,2025,5,5,1,3,1,0,1.28,188,2025-08-05,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+2,Lux Soap 75g,FMCG,32,42,0,109,133,28,3,0.48,0.85,Summer,None,31.25,4578.0,1090.0,3488,4,2025,4,4,1,2,0,0,1.312,105,2025-04-04,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+3,Sooji 500g,Grocery,24,32,0,54,107,16,1,0.36,0.85,Autumn,None,33.33,1728.0,432.0,1296,9,2025,7,0,1,3,0,0,1.333,91,2025-09-07,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+4,Eveready Battery AA 4pc,Electronics,55,75,0,63,177,18,3,0.82,0.75,Rainy,None,36.36,4725.0,1260.0,3465,7,2025,3,3,1,3,0,0,1.364,159,2025-07-03,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+5,Socks Cotton 3 pair,Fashion,55,80,0,71,89,14,3,0.82,0.75,Winter,None,45.45,5680.0,1775.0,3905,2,2025,7,0,1,1,0,0,1.455,75,2025-02-07,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+6,Atta Aashirvaad 10kg,Grocery,330,390,0,119,195,38,4,4.95,0.85,Summer,None,18.18,46410.0,7140.0,39270,5,2025,6,6,1,2,1,0,1.182,157,2025-05-06,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+7,Sugar 1kg,Grocery,42,50,0,111,50,48,2,0.63,0.9,Winter,None,19.05,5550.0,888.0,4662,11,2025,15,1,3,4,0,0,1.19,2,2025-11-15,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+8,Phone Charging Cable,Electronics,65,100,10,50,117,14,5,0.97,0.95,Autumn,Navratri,53.85,4500.0,1250.0,3250,10,2025,3,3,1,4,0,1,1.538,103,2025-10-03,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+9,Tape Roll,Stationery,18,28,0,32,130,12,3,0.27,0.92,Summer,None,55.56,896.0,320.0,576,5,2025,22,1,4,2,0,0,1.556,118,2025-05-22,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+10,All Out Refill,FMCG,88,115,0,77,221,16,2,1.32,0.9,Summer,None,30.68,8855.0,2079.0,6776,4,2025,17,3,3,2,0,0,1.307,205,2025-04-17,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+11,CFL Bulb 9W Bajaj,Electronics,65,90,5,23,26,10,1,0.97,0.9,Autumn,Ganesh Chaturthi,38.46,1966.5,471.5,1495,9,2025,22,1,4,3,0,1,1.385,16,2025-09-22,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+12,Refined Oil Soya 5L,Grocery,580,680,0,61,83,20,2,8.7,0.95,Winter,Christmas,17.24,41480.0,6100.0,35380,12,2025,17,3,3,4,0,1,1.172,63,2025-12-17,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+13,Handkerchief 3pc,Fashion,30,45,0,37,240,12,3,0.45,0.85,Winter,None,50.0,1665.0,555.0,1110,12,2025,15,1,3,4,0,0,1.5,228,2025-12-15,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+14,Gamcha Cotton Towel,Fashion,55,80,0,115,127,16,5,0.82,0.85,Summer,Baisakhi,45.45,9200.0,2875.0,6325,4,2025,12,5,2,2,1,1,1.455,111,2025-04-12,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+15,Rajma 500g,Grocery,65,82,0,48,216,14,3,0.97,0.75,Summer,None,26.15,3936.0,816.0,3120,5,2025,18,4,3,2,0,0,1.262,202,2025-05-18,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+16,Chana Dal 1kg,Grocery,90,112,0,73,235,24,3,1.35,0.95,Autumn,Diwali,24.44,8176.0,1606.0,6570,10,2025,16,2,3,4,0,1,1.244,211,2025-10-16,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+17,LED Bulb 9W Philips,Electronics,95,130,0,44,37,12,3,1.43,0.9,Summer,Holi,36.84,5720.0,1540.0,4180,3,2025,24,3,4,1,0,1,1.368,25,2025-03-24,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+18,Fevicol 50g,Stationery,20,28,10,39,134,18,3,0.3,0.92,Autumn,Ganesh Chaturthi,40.0,982.8,202.8,780,9,2025,25,4,4,3,0,1,1.4,116,2025-09-25,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+19,Haldi Powder 100g,Grocery,28,38,0,95,28,20,5,0.42,0.75,Summer,None,35.71,3610.0,950.0,2660,4,2025,15,1,3,2,0,0,1.357,8,2025-04-15,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+20,Daliya 500g,Grocery,28,38,0,32,56,12,3,0.42,0.9,Rainy,None,35.71,1216.0,320.0,896,6,2025,20,6,3,2,1,0,1.357,44,2025-06-20,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+21,Moong Dal 500g,Grocery,72,90,0,58,160,18,1,1.08,0.8,Autumn,Navratri,25.0,5220.0,1044.0,4176,10,2025,19,5,3,4,1,1,1.25,142,2025-10-19,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+22,Vim Bar 200g,FMCG,25,32,0,65,114,24,5,0.38,0.9,Winter,New Year,28.0,2080.0,455.0,1625,12,2025,3,3,1,4,0,1,1.28,90,2025-12-03,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+23,Haldirams Mixture 400g,FMCG,110,148,0,66,96,28,3,1.65,0.8,Rainy,None,34.55,9768.0,2508.0,7260,8,2025,13,6,2,3,1,0,1.345,68,2025-08-13,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+24,Colgate 200g,FMCG,82,100,0,71,192,26,5,1.23,0.8,Winter,None,21.95,7100.0,1278.0,5822,11,2025,2,2,1,4,0,0,1.22,166,2025-11-02,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+25,Classmate Notebook 200pg,Stationery,48,65,0,105,197,32,4,0.72,0.9,Winter,Republic Day,35.42,6825.0,1785.0,5040,1,2025,20,6,3,1,1,1,1.354,165,2025-01-20,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+26,Salt Tata 1kg,Grocery,18,22,0,104,77,36,5,0.27,0.75,Winter,None,22.22,2288.0,416.0,1872,1,2025,3,3,1,1,0,0,1.222,41,2025-01-03,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+27,Diya Set 12pc,FMCG,38,65,0,9,83,10,2,0.57,0.92,Winter,Christmas,71.05,585.0,243.0,342,12,2025,20,6,3,4,1,1,1.711,73,2025-12-20,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+28,Poha 500g,Grocery,28,36,0,45,87,22,5,0.42,0.8,Rainy,None,28.57,1620.0,360.0,1260,6,2025,11,4,2,2,0,0,1.286,65,2025-06-11,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+29,Fevicol 50g,Stationery,20,28,0,41,222,18,5,0.3,0.85,Summer,None,40.0,1148.0,328.0,820,5,2025,9,2,2,2,0,0,1.4,204,2025-05-09,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+30,Basmati Rice 5kg,Grocery,280,340,0,90,208,34,3,4.2,0.95,Autumn,None,21.43,30600.0,5400.0,25200,10,2025,17,3,3,4,0,0,1.214,174,2025-10-17,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+31,Red Chilli Powder 100g,Grocery,30,42,0,65,138,19,5,0.45,0.85,Summer,None,40.0,2730.0,780.0,1950,4,2025,8,1,2,2,0,0,1.4,119,2025-04-08,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+32,Ariel 500g,FMCG,95,120,0,55,100,18,5,1.43,0.95,Rainy,None,26.32,6600.0,1375.0,5225,6,2025,4,4,1,2,0,0,1.263,82,2025-06-04,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+33,Handkerchief 3pc,Fashion,30,45,0,26,226,12,5,0.45,0.95,Winter,None,50.0,1170.0,390.0,780,2,2025,7,0,1,1,0,0,1.5,214,2025-02-07,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+34,Harpic 500ml,FMCG,75,98,0,39,227,14,3,1.12,0.92,Summer,None,30.67,3822.0,897.0,2925,5,2025,26,5,4,2,1,0,1.307,213,2025-05-26,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+35,Socks Cotton 3 pair,Fashion,55,80,0,46,246,14,4,0.82,0.85,Winter,None,45.45,3680.0,1150.0,2530,2,2025,26,5,4,1,1,0,1.455,232,2025-02-26,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+36,Paneer 200g,Grocery,85,105,0,60,108,22,3,1.27,0.75,Winter,Christmas,23.53,6300.0,1200.0,5100,12,2025,28,0,4,4,0,1,1.235,86,2025-12-28,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+37,Gamcha Cotton Towel,Fashion,55,80,0,63,244,16,3,0.82,0.95,Rainy,None,45.45,5040.0,1575.0,3465,7,2025,16,2,3,3,0,0,1.455,228,2025-07-16,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+38,Lifebuoy Soap 100g,FMCG,28,36,10,109,219,36,5,0.42,0.8,Winter,Children's Day,28.57,3531.6,479.6,3052,11,2025,24,3,4,4,0,1,1.286,183,2025-11-24,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+39,Good Day Biscuit 250g,FMCG,28,38,0,101,52,34,5,0.42,0.8,Summer,None,35.71,3838.0,1010.0,2828,3,2025,18,4,3,1,0,0,1.357,18,2025-03-18,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+40,Soya Chunks 200g,Grocery,35,48,0,56,212,14,1,0.53,0.75,Rainy,None,37.14,2688.0,728.0,1960,6,2025,20,6,3,2,1,0,1.371,198,2025-06-20,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+41,Kurkure 65g,FMCG,18,25,0,203,229,70,3,0.27,0.85,Autumn,Navratri,38.89,5075.0,1421.0,3654,9,2025,12,5,2,3,1,1,1.389,159,2025-09-12,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+42,Dry Coconut 200g,Grocery,95,125,0,28,249,12,4,1.43,0.8,Rainy,None,31.58,3500.0,840.0,2660,6,2025,24,3,4,2,0,0,1.316,237,2025-06-24,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+43,Salt Tata 1kg,Grocery,18,22,0,116,19,36,2,0.27,0.95,Winter,None,22.22,2552.0,464.0,2088,2,2025,5,5,1,1,1,0,1.222,-17,2025-02-05,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+44,Chana Dal 1kg,Grocery,90,112,0,63,17,24,5,1.35,0.9,Summer,None,24.44,7056.0,1386.0,5670,3,2025,2,2,1,1,0,0,1.244,-7,2025-03-02,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+45,Sketch Pens 12pc,Stationery,32,48,0,44,26,14,5,0.48,0.8,Summer,None,50.0,2112.0,704.0,1408,3,2025,9,2,2,1,0,0,1.5,12,2025-03-09,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+46,Refined Oil Soya 5L,Grocery,580,680,0,47,75,20,2,8.7,0.75,Summer,None,17.24,31960.0,4700.0,27260,5,2025,15,1,3,2,0,0,1.172,55,2025-05-15,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+47,Salwar Suit Cotton,Fashion,280,450,0,26,105,10,5,4.2,0.92,Summer,None,60.71,11700.0,4420.0,7280,4,2025,26,5,4,2,1,0,1.607,95,2025-04-26,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+48,Handkerchief 3pc,Fashion,30,45,0,29,104,12,1,0.45,0.92,Rainy,None,50.0,1305.0,435.0,870,8,2025,10,3,2,3,0,0,1.5,92,2025-08-10,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+49,Eraser Apsara,Stationery,4,7,0,81,206,24,3,0.06,0.8,Winter,None,75.0,567.0,243.0,324,12,2025,15,1,3,4,0,0,1.75,182,2025-12-15,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+50,Masoor Dal 500g,Grocery,60,78,5,39,62,16,5,0.9,0.85,Rainy,Independence Day,30.0,2889.9,549.9,2340,8,2025,17,3,3,3,0,1,1.3,46,2025-08-17,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+51,Diya Set 12pc,FMCG,38,65,0,6,29,10,1,0.57,0.9,Summer,Baisakhi,71.05,390.0,162.0,228,4,2025,21,0,3,2,0,1,1.711,19,2025-04-21,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+52,Tape Roll,Stationery,18,28,0,36,172,12,4,0.27,0.95,Autumn,None,55.56,1008.0,360.0,648,9,2025,16,2,3,3,0,0,1.556,160,2025-09-16,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+53,Mustard Oil 1L,Grocery,155,185,5,72,110,28,1,2.32,0.92,Autumn,Ganesh Chaturthi,19.35,12654.0,1494.0,11160,9,2025,22,1,4,3,0,1,1.194,82,2025-09-22,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+54,Poha 500g,Grocery,28,36,0,46,107,22,3,0.42,0.9,Winter,None,28.57,1656.0,368.0,1288,1,2025,22,1,4,1,0,0,1.286,85,2025-01-22,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+55,Red Chilli Powder 100g,Grocery,30,42,0,51,217,19,3,0.45,0.8,Winter,Republic Day,40.0,2142.0,612.0,1530,1,2025,14,0,2,1,0,1,1.4,198,2025-01-14,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+56,Toor Dal 1kg,Grocery,130,155,0,85,172,30,5,1.95,0.75,Rainy,None,19.23,13175.0,2125.0,11050,6,2025,14,0,2,2,0,0,1.192,142,2025-06-14,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+57,Classmate Notebook 200pg,Stationery,48,65,0,74,30,32,4,0.72,0.95,Winter,Valentine's Day,35.42,4810.0,1258.0,3552,2,2025,23,2,4,1,0,1,1.354,-2,2025-02-23,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+58,CFL Bulb 9W Bajaj,Electronics,65,90,0,22,27,10,3,0.97,0.85,Winter,Children's Day,38.46,1980.0,550.0,1430,11,2025,19,5,3,4,1,1,1.385,17,2025-11-19,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+59,Atta Aashirvaad 10kg,Grocery,330,390,10,105,133,38,5,4.95,0.92,Autumn,Dussehra,18.18,36855.0,2205.0,34650,10,2025,25,4,4,4,0,1,1.182,95,2025-10-25,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+60,Paneer 200g,Grocery,85,105,0,70,86,22,4,1.27,0.95,Summer,None,23.53,7350.0,1400.0,5950,5,2025,10,3,2,2,0,0,1.235,64,2025-05-10,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+61,Dry Coconut 200g,Grocery,95,125,0,34,147,12,1,1.43,0.8,Summer,None,31.58,4250.0,1020.0,3230,3,2025,4,4,1,1,0,0,1.316,135,2025-03-04,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+62,Atta Aashirvaad 10kg,Grocery,330,390,0,102,185,38,4,4.95,0.95,Autumn,None,18.18,39780.0,6120.0,33660,9,2025,24,3,4,3,0,0,1.182,147,2025-09-24,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+63,Register A4 100pg,Stationery,35,50,0,30,44,12,3,0.53,0.92,Summer,None,42.86,1500.0,450.0,1050,3,2025,1,1,1,1,0,0,1.429,32,2025-03-01,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+64,Urea Fertilizer 1kg,Agriculture,35,50,0,41,215,16,1,0.53,0.8,Winter,Children's Day,42.86,2050.0,615.0,1435,11,2025,19,5,3,4,1,1,1.429,199,2025-11-19,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+65,Maaza 250ml,FMCG,18,22,0,229,22,80,3,0.27,0.75,Winter,None,22.22,5038.0,916.0,4122,2,2025,21,0,3,1,0,0,1.222,-58,2025-02-21,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+66,Clinic Plus Shampoo 80ml,FMCG,55,72,0,86,140,20,2,0.82,0.9,Rainy,None,30.91,6192.0,1462.0,4730,6,2025,9,2,2,2,0,0,1.309,120,2025-06-09,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+67,Masoor Dal 500g,Grocery,60,78,0,53,57,16,5,0.9,0.8,Rainy,None,30.0,4134.0,954.0,3180,8,2025,3,3,1,3,0,0,1.3,41,2025-08-03,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+68,Basmati Rice 5kg,Grocery,280,340,0,122,121,34,5,4.2,0.92,Winter,Christmas,21.43,41480.0,7320.0,34160,12,2025,12,5,2,4,1,1,1.214,87,2025-12-12,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+69,Eveready Battery AA 4pc,Electronics,55,75,5,68,146,18,2,0.82,0.95,Winter,Lohri,36.36,4845.0,1105.0,3740,1,2025,21,0,3,1,0,1,1.364,128,2025-01-21,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+70,Pepsodent 200g,FMCG,75,92,0,54,113,22,2,1.12,0.95,Rainy,None,22.67,4968.0,918.0,4050,7,2025,4,4,1,3,0,0,1.227,91,2025-07-04,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+71,Poha 500g,Grocery,28,36,0,66,32,22,4,0.42,0.8,Summer,None,28.57,2376.0,528.0,1848,4,2025,18,4,3,2,0,0,1.286,10,2025-04-18,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+72,Soya Chunks 200g,Grocery,35,48,10,45,32,14,2,0.53,0.95,Winter,Lohri,37.14,1944.0,369.0,1575,1,2025,2,2,1,1,0,1,1.371,18,2025-01-02,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+73,Rajma 500g,Grocery,65,82,0,53,197,14,1,0.97,0.9,Autumn,None,26.15,4346.0,901.0,3445,9,2025,26,5,4,3,1,0,1.262,183,2025-09-26,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+74,Hajmola 100 Tabs,FMCG,45,60,0,56,219,22,4,0.67,0.75,Winter,None,33.33,3360.0,840.0,2520,12,2025,10,3,2,4,0,0,1.333,197,2025-12-10,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+75,Tea Brooke Bond 500g,Grocery,175,215,0,144,176,32,5,2.62,0.85,Rainy,None,22.86,30960.0,5760.0,25200,8,2025,17,3,3,3,0,0,1.229,144,2025-08-17,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+76,Neem Pesticide 100ml,Agriculture,65,95,0,48,184,10,3,0.97,0.75,Rainy,None,46.15,4560.0,1440.0,3120,6,2025,17,3,3,2,0,0,1.462,174,2025-06-17,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+77,Refined Oil Soya 5L,Grocery,580,680,0,61,196,20,2,8.7,0.75,Rainy,None,17.24,41480.0,6100.0,35380,7,2025,14,0,2,3,0,0,1.172,176,2025-07-14,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+78,Besan 500g,Grocery,38,48,0,74,137,16,3,0.57,0.9,Winter,None,26.32,3552.0,740.0,2812,12,2025,22,1,4,4,0,0,1.263,121,2025-12-22,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+79,Sooji 500g,Grocery,24,32,0,51,194,16,2,0.36,0.85,Rainy,None,33.33,1632.0,408.0,1224,6,2025,17,3,3,2,0,0,1.333,178,2025-06-17,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+80,Clinic Plus Shampoo 80ml,FMCG,55,72,0,49,207,20,4,0.82,0.85,Autumn,Navratri,30.91,3528.0,833.0,2695,10,2025,26,5,4,4,1,1,1.309,187,2025-10-26,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+81,Maggi Noodles 4-Pack,FMCG,52,65,10,158,247,36,3,0.78,0.75,Winter,Republic Day,25.0,9243.0,1027.0,8216,1,2025,26,5,4,1,1,1,1.25,211,2025-01-26,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+82,Surf Excel 1kg,FMCG,130,165,0,58,79,22,2,1.95,0.85,Summer,None,26.92,9570.0,2030.0,7540,3,2025,4,4,1,1,0,0,1.269,57,2025-03-04,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+83,All Out Refill,FMCG,88,115,5,47,196,16,1,1.32,0.8,Autumn,Navratri,30.68,5134.75,998.75,4136,10,2025,9,2,2,4,0,1,1.307,180,2025-10-09,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+84,Scale 30cm,Stationery,8,12,0,38,40,16,3,0.12,0.92,Summer,None,50.0,456.0,152.0,304,3,2025,10,3,2,1,0,0,1.5,24,2025-03-10,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+85,Banyan Vest Cotton,Fashion,75,110,0,28,192,12,3,1.12,0.75,Winter,None,46.67,3080.0,980.0,2100,1,2025,27,6,4,1,1,0,1.467,180,2025-01-27,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+86,Classmate Notebook 200pg,Stationery,48,65,0,40,25,32,3,0.72,0.9,Summer,None,35.42,2600.0,680.0,1920,3,2025,17,3,3,1,0,0,1.354,-7,2025-03-17,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+87,Vim Bar 200g,FMCG,25,32,0,76,183,24,1,0.38,0.75,Winter,Children's Day,28.0,2432.0,532.0,1900,11,2025,2,2,1,4,0,1,1.28,159,2025-11-02,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+88,Extension Cord 5m,Electronics,175,240,0,11,151,10,3,2.62,0.9,Winter,New Year,37.14,2640.0,715.0,1925,12,2025,27,6,4,4,1,1,1.371,141,2025-12-27,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+89,Garden Pump Sprayer 1L,Agriculture,145,210,0,21,175,10,1,2.17,0.85,Winter,Republic Day,44.83,4410.0,1365.0,3045,1,2025,2,2,1,1,0,1,1.448,165,2025-01-02,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+90,Atta Aashirvaad 10kg,Grocery,330,390,0,129,217,38,3,4.95,0.75,Winter,Valentine's Day,18.18,50310.0,7740.0,42570,2,2025,18,4,3,1,0,1,1.182,179,2025-02-18,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+91,Socks Cotton 3 pair,Fashion,55,80,0,33,24,14,2,0.82,0.95,Summer,Labour Day,45.45,2640.0,825.0,1815,5,2025,24,3,4,2,0,1,1.455,10,2025-05-24,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+92,Kurkure 65g,FMCG,18,25,0,253,114,70,5,0.27,0.75,Rainy,None,38.89,6325.0,1771.0,4554,7,2025,11,4,2,3,0,0,1.389,44,2025-07-11,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+93,Haldi Powder 100g,Grocery,28,38,0,52,161,20,2,0.42,0.9,Summer,Baisakhi,35.71,1976.0,520.0,1456,4,2025,14,0,2,2,0,1,1.357,141,2025-04-14,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+94,Gamcha Cotton Towel,Fashion,55,80,0,56,144,16,2,0.82,0.9,Winter,None,45.45,4480.0,1400.0,3080,2,2025,27,6,4,1,1,0,1.455,128,2025-02-27,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+95,Ariel 500g,FMCG,95,120,0,49,214,18,5,1.43,0.75,Autumn,Navratri,26.32,5880.0,1225.0,4655,10,2025,15,1,3,4,0,1,1.263,196,2025-10-15,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+96,Camphor Tablets 25g,FMCG,28,40,10,35,70,14,2,0.42,0.9,Winter,Chhath Puja,42.86,1260.0,280.0,980,11,2025,20,6,3,4,1,1,1.429,56,2025-11-20,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+97,Kurta Men Cotton,Fashion,195,320,10,16,93,10,2,2.92,0.85,Summer,Baisakhi,64.1,4608.0,1488.0,3120,4,2025,22,1,4,2,0,1,1.641,83,2025-04-22,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+98,Haldirams Namkeen 200g,FMCG,55,75,0,141,54,38,4,0.82,0.8,Winter,None,36.36,10575.0,2820.0,7755,1,2025,28,0,4,1,0,0,1.364,16,2025-01-28,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+99,Salt Tata 1kg,Grocery,18,22,0,99,230,36,4,0.27,0.92,Winter,None,22.22,2178.0,396.0,1782,12,2025,1,1,1,4,0,0,1.222,194,2025-12-01,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+100,Eveready Battery D 2pc,Electronics,65,90,0,34,46,12,1,0.97,0.95,Summer,None,38.46,3060.0,850.0,2210,3,2025,28,0,4,1,0,0,1.385,34,2025-03-28,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+101,Kurkure 65g,FMCG,18,25,0,174,88,70,3,0.27,0.9,Rainy,Independence Day,38.89,4350.0,1218.0,3132,8,2025,3,3,1,3,0,1,1.389,18,2025-08-03,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+102,Dry Coconut 200g,Grocery,95,125,0,23,90,12,5,1.43,0.95,Winter,Valentine's Day,31.58,2875.0,690.0,2185,2,2025,21,0,3,1,0,1,1.316,78,2025-02-21,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+103,Atta Aashirvaad 10kg,Grocery,330,390,0,108,201,38,3,4.95,0.85,Winter,Children's Day,18.18,42120.0,6480.0,35640,11,2025,8,1,2,4,0,1,1.182,163,2025-11-08,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+104,Haldirams Namkeen 200g,FMCG,55,75,0,117,48,38,5,0.82,0.95,Rainy,None,36.36,8775.0,2340.0,6435,7,2025,4,4,1,3,0,0,1.364,10,2025-07-04,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+105,Red Chilli Powder 100g,Grocery,30,42,0,57,176,19,5,0.45,0.75,Rainy,None,40.0,2394.0,684.0,1710,8,2025,1,1,1,3,0,0,1.4,157,2025-08-01,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+106,Gamcha Cotton Towel,Fashion,55,80,0,51,219,16,1,0.82,0.9,Winter,None,45.45,4080.0,1275.0,2805,1,2025,17,3,3,1,0,0,1.455,203,2025-01-17,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+107,Chana Dal 1kg,Grocery,90,112,0,58,51,24,2,1.35,0.95,Autumn,None,24.44,6496.0,1276.0,5220,9,2025,12,5,2,3,1,0,1.244,27,2025-09-12,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+108,Soya Chunks 200g,Grocery,35,48,0,42,189,14,3,0.53,0.92,Rainy,None,37.14,2016.0,546.0,1470,8,2025,12,5,2,3,1,0,1.371,175,2025-08-12,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+109,Vicks 10g,FMCG,35,48,0,86,227,16,3,0.53,0.8,Rainy,None,37.14,4128.0,1118.0,3010,6,2025,20,6,3,2,1,0,1.371,211,2025-06-20,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+110,Clinic Plus Shampoo 80ml,FMCG,55,72,10,50,117,20,1,0.82,0.9,Autumn,Navratri,30.91,3240.0,490.0,2750,9,2025,21,0,3,3,0,1,1.309,97,2025-09-21,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+111,Ariel 500g,FMCG,95,120,0,42,239,18,3,1.43,0.75,Summer,None,26.32,5040.0,1050.0,3990,4,2025,19,5,3,2,1,0,1.263,221,2025-04-19,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+112,Dettol 250ml,FMCG,68,88,0,58,169,18,2,1.02,0.75,Rainy,None,29.41,5104.0,1160.0,3944,6,2025,9,2,2,2,0,0,1.294,151,2025-06-09,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+113,Masoor Dal 500g,Grocery,60,78,10,50,206,16,4,0.9,0.8,Winter,New Year,30.0,3510.0,510.0,3000,12,2025,2,2,1,4,0,1,1.3,190,2025-12-02,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+114,Lifebuoy Soap 100g,FMCG,28,36,0,123,54,36,2,0.42,0.75,Winter,None,28.57,4428.0,984.0,3444,1,2025,8,1,2,1,0,0,1.286,18,2025-01-08,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+115,Good Day Biscuit 250g,FMCG,28,38,0,93,226,34,3,0.42,0.92,Winter,None,35.71,3534.0,930.0,2604,12,2025,5,5,1,4,1,0,1.357,192,2025-12-05,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+116,Haldirams Mixture 400g,FMCG,110,148,0,89,96,28,5,1.65,0.95,Winter,Lohri,34.55,13172.0,3382.0,9790,1,2025,2,2,1,1,0,1,1.345,68,2025-01-02,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+117,Agarbatti Pack 20pc,FMCG,25,35,0,55,248,20,5,0.38,0.9,Winter,None,40.0,1925.0,550.0,1375,12,2025,2,2,1,4,0,0,1.4,228,2025-12-02,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+118,Tea Tata Gold 250g,Grocery,105,130,0,75,112,26,1,1.57,0.75,Rainy,None,23.81,9750.0,1875.0,7875,6,2025,10,3,2,2,0,0,1.238,86,2025-06-10,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+119,Mosquito Coil 10pc,FMCG,32,45,0,52,215,22,2,0.48,0.9,Autumn,Dussehra,40.62,2340.0,676.0,1664,10,2025,4,4,1,4,0,1,1.406,193,2025-10-04,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+120,Gamcha Cotton Towel,Fashion,55,80,0,72,118,16,3,0.82,0.9,Summer,None,45.45,5760.0,1800.0,3960,3,2025,15,1,3,1,0,0,1.455,102,2025-03-15,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+121,Sketch Pens 12pc,Stationery,32,48,5,45,160,14,4,0.48,0.92,Winter,Christmas,50.0,2052.0,612.0,1440,12,2025,23,2,4,4,0,1,1.5,146,2025-12-23,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+122,Sooji 500g,Grocery,24,32,0,37,80,16,3,0.36,0.85,Autumn,Ganesh Chaturthi,33.33,1184.0,296.0,888,9,2025,28,0,4,3,0,1,1.333,64,2025-09-28,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+123,CFL Bulb 9W Bajaj,Electronics,65,90,0,31,225,10,1,0.97,0.92,Winter,None,38.46,2790.0,775.0,2015,11,2025,6,6,1,4,1,0,1.385,215,2025-11-06,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+124,Atta Aashirvaad 10kg,Grocery,330,390,0,92,187,38,4,4.95,0.85,Summer,None,18.18,35880.0,5520.0,30360,4,2025,9,2,2,2,0,0,1.182,149,2025-04-09,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+125,Paneer 200g,Grocery,85,105,0,83,73,22,5,1.27,0.8,Autumn,Diwali,23.53,8715.0,1660.0,7055,10,2025,12,5,2,4,1,1,1.235,51,2025-10-12,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+126,Colgate 200g,FMCG,82,100,0,57,78,26,3,1.23,0.8,Summer,Holi,21.95,5700.0,1026.0,4674,3,2025,14,0,2,1,0,1,1.22,52,2025-03-14,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+127,Salt Tata 1kg,Grocery,18,22,5,120,78,36,2,0.27,0.8,Summer,Baisakhi,22.22,2508.0,348.0,2160,4,2025,24,3,4,2,0,1,1.222,42,2025-04-24,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+128,Daliya 500g,Grocery,28,38,0,40,17,12,5,0.42,0.75,Winter,None,35.71,1520.0,400.0,1120,1,2025,24,3,4,1,0,0,1.357,5,2025-01-24,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+129,Camphor Tablets 25g,FMCG,28,40,0,33,29,14,3,0.42,0.92,Rainy,None,42.86,1320.0,396.0,924,7,2025,12,5,2,3,1,0,1.429,15,2025-07-12,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+130,Scale 30cm,Stationery,8,12,0,39,181,16,2,0.12,0.92,Autumn,None,50.0,468.0,156.0,312,9,2025,5,5,1,3,1,0,1.5,165,2025-09-05,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+131,Eveready Battery AA 4pc,Electronics,55,75,0,56,237,18,4,0.82,0.92,Rainy,Janmashtami,36.36,4200.0,1120.0,3080,8,2025,27,6,4,3,1,1,1.364,219,2025-08-27,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+132,Kurta Men Cotton,Fashion,195,320,0,27,113,10,4,2.92,0.9,Summer,None,64.1,8640.0,3375.0,5265,3,2025,4,4,1,1,0,0,1.641,103,2025-03-04,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+133,Stapler Small,Stationery,45,65,0,24,91,10,2,0.67,0.95,Rainy,None,44.44,1560.0,480.0,1080,7,2025,14,0,2,3,0,0,1.444,81,2025-07-14,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+134,Lux Soap 75g,FMCG,32,42,10,64,165,28,3,0.48,0.95,Summer,Holi,31.25,2419.2,371.2,2048,3,2025,24,3,4,1,0,1,1.312,137,2025-03-24,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+135,Toor Dal 1kg,Grocery,130,155,5,87,120,30,3,1.95,0.75,Rainy,Independence Day,19.23,12810.75,1500.75,11310,8,2025,25,4,4,3,0,1,1.192,90,2025-08-25,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+136,Mosquito Coil 10pc,FMCG,32,45,0,61,38,22,3,0.48,0.85,Autumn,Dussehra,40.62,2745.0,793.0,1952,10,2025,27,6,4,4,1,1,1.406,16,2025-10-27,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+137,Besan 500g,Grocery,38,48,0,44,146,16,4,0.57,0.85,Rainy,None,26.32,2112.0,440.0,1672,8,2025,8,1,2,3,0,0,1.263,130,2025-08-08,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+138,Haldirams Namkeen 200g,FMCG,55,75,0,94,215,38,2,0.82,0.75,Autumn,Dussehra,36.36,7050.0,1880.0,5170,10,2025,15,1,3,4,0,1,1.364,177,2025-10-15,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+139,Salwar Suit Cotton,Fashion,280,450,0,20,99,10,5,4.2,0.8,Rainy,None,60.71,9000.0,3400.0,5600,6,2025,17,3,3,2,0,0,1.607,89,2025-06-17,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+140,DAP Fertilizer 1kg,Agriculture,55,75,0,66,72,12,3,0.82,0.95,Summer,None,36.36,4950.0,1320.0,3630,4,2025,21,0,3,2,0,0,1.364,60,2025-04-21,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+141,Poha 500g,Grocery,28,36,0,58,102,22,4,0.42,0.92,Winter,None,28.57,2088.0,464.0,1624,1,2025,7,0,1,1,0,0,1.286,80,2025-01-07,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+142,Mustard Oil 1L,Grocery,155,185,0,120,136,28,1,2.32,0.9,Winter,Children's Day,19.35,22200.0,3600.0,18600,11,2025,7,0,1,4,0,1,1.194,108,2025-11-07,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+143,Lifebuoy Soap 100g,FMCG,28,36,0,168,112,36,4,0.42,0.92,Summer,None,28.57,6048.0,1344.0,4704,5,2025,14,0,2,2,0,0,1.286,76,2025-05-14,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+144,Sunsilk Shampoo 80ml,FMCG,58,75,5,41,190,18,1,0.87,0.9,Winter,Chhath Puja,29.31,2921.25,543.25,2378,11,2025,11,4,2,4,0,1,1.293,172,2025-11-11,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+145,Toor Dal 1kg,Grocery,130,155,0,74,42,30,3,1.95,0.95,Summer,None,19.23,11470.0,1850.0,9620,5,2025,19,5,3,2,1,0,1.192,12,2025-05-19,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+146,Eno Sachet 6pc,FMCG,28,38,0,53,67,20,3,0.42,0.92,Winter,New Year,35.71,2014.0,530.0,1484,12,2025,8,1,2,4,0,1,1.357,47,2025-12-08,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+147,Garden Pump Sprayer 1L,Agriculture,145,210,0,24,184,10,2,2.17,0.95,Summer,None,44.83,5040.0,1560.0,3480,4,2025,24,3,4,2,0,0,1.448,174,2025-04-24,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+148,Colgate 200g,FMCG,82,100,5,56,203,26,1,1.23,0.85,Winter,Christmas,21.95,5320.0,728.0,4592,12,2025,15,1,3,4,0,1,1.22,177,2025-12-15,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+149,Basmati Rice 5kg,Grocery,280,340,0,137,143,34,5,4.2,0.85,Winter,None,21.43,46580.0,8220.0,38360,11,2025,20,6,3,4,1,0,1.214,109,2025-11-20,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+150,Refined Oil Soya 5L,Grocery,580,680,0,49,106,20,3,8.7,0.8,Winter,None,17.24,33320.0,4900.0,28420,12,2025,19,5,3,4,1,0,1.172,86,2025-12-19,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+151,Good Day Biscuit 250g,FMCG,28,38,0,77,249,34,2,0.42,0.8,Autumn,Navratri,35.71,2926.0,770.0,2156,10,2025,4,4,1,4,0,1,1.357,215,2025-10-04,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+152,Agarbatti Pack 20pc,FMCG,25,35,0,45,190,20,1,0.38,0.95,Summer,None,40.0,1575.0,450.0,1125,4,2025,26,5,4,2,1,0,1.4,170,2025-04-26,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+153,Harpic 500ml,FMCG,75,98,0,35,249,14,3,1.12,0.85,Winter,None,30.67,3430.0,805.0,2625,12,2025,26,5,4,4,1,0,1.307,235,2025-12-26,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+154,Eveready Battery AA 4pc,Electronics,55,75,0,80,136,18,4,0.82,0.8,Winter,None,36.36,6000.0,1600.0,4400,2,2025,14,0,2,1,0,0,1.364,118,2025-02-14,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+155,Coriander Powder 100g,Grocery,22,32,0,54,130,18,5,0.33,0.85,Winter,None,45.45,1728.0,540.0,1188,12,2025,22,1,4,4,0,0,1.455,112,2025-12-22,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+156,Maida 1kg,Grocery,32,40,0,42,190,18,5,0.48,0.95,Autumn,None,25.0,1680.0,336.0,1344,9,2025,18,4,3,3,0,0,1.25,172,2025-09-18,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+157,Limca 600ml,FMCG,35,42,0,147,245,60,5,0.53,0.85,Rainy,None,20.0,6174.0,1029.0,5145,6,2025,10,3,2,2,0,0,1.2,185,2025-06-10,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+158,Neem Pesticide 100ml,Agriculture,65,95,0,52,36,10,2,0.97,0.8,Rainy,None,46.15,4940.0,1560.0,3380,7,2025,26,5,4,3,1,0,1.462,26,2025-07-26,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+159,Salt Tata 1kg,Grocery,18,22,0,122,220,36,1,0.27,0.8,Autumn,Dussehra,22.22,2684.0,488.0,2196,10,2025,1,1,1,4,0,1,1.222,184,2025-10-01,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+160,Colgate 200g,FMCG,82,100,10,52,95,26,3,1.23,0.8,Winter,Lohri,21.95,4680.0,416.0,4264,1,2025,27,6,4,1,1,1,1.22,69,2025-01-27,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+161,CFL Bulb 9W Bajaj,Electronics,65,90,5,30,113,10,5,0.97,0.95,Rainy,Independence Day,38.46,2565.0,615.0,1950,8,2025,7,0,1,3,0,1,1.385,103,2025-08-07,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+162,Thums Up 600ml,FMCG,38,45,0,167,140,72,3,0.57,0.95,Rainy,None,18.42,7515.0,1169.0,6346,8,2025,2,2,1,3,0,0,1.184,68,2025-08-02,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+163,Gulal Colors 100g,FMCG,22,40,10,6,103,10,3,0.33,0.92,Autumn,Diwali,81.82,216.0,84.0,132,10,2025,28,0,4,4,0,1,1.818,93,2025-10-28,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+164,Good Day Biscuit 250g,FMCG,28,38,0,95,166,34,2,0.42,0.9,Summer,None,35.71,3610.0,950.0,2660,4,2025,24,3,4,2,0,0,1.357,132,2025-04-24,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+165,Moong Dal 500g,Grocery,72,90,0,50,118,18,3,1.08,0.8,Summer,None,25.0,4500.0,900.0,3600,4,2025,24,3,4,2,0,0,1.25,100,2025-04-24,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+166,Atta Aashirvaad 10kg,Grocery,330,390,0,119,85,38,2,4.95,0.95,Winter,None,18.18,46410.0,7140.0,39270,12,2025,17,3,3,4,0,0,1.182,47,2025-12-17,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+167,Maggi Noodles 4-Pack,FMCG,52,65,0,104,157,36,2,0.78,0.8,Summer,None,25.0,6760.0,1352.0,5408,4,2025,11,4,2,2,0,0,1.25,121,2025-04-11,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+168,Basmati Rice 5kg,Grocery,280,340,0,122,199,34,5,4.2,0.9,Winter,None,21.43,41480.0,7320.0,34160,2,2025,28,0,4,1,0,0,1.214,165,2025-02-28,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+169,Hajmola 100 Tabs,FMCG,45,60,0,57,222,22,1,0.67,0.9,Winter,None,33.33,3420.0,855.0,2565,12,2025,27,6,4,4,1,0,1.333,200,2025-12-27,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+170,Vegetable Seeds Packet,Agriculture,28,45,0,76,30,14,3,0.42,0.85,Winter,None,60.71,3420.0,1292.0,2128,1,2025,25,4,4,1,0,0,1.607,16,2025-01-25,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+171,Diya Set 12pc,FMCG,38,65,0,10,83,10,3,0.57,0.95,Summer,None,71.05,650.0,270.0,380,4,2025,23,2,4,2,0,0,1.711,73,2025-04-23,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+172,Glucon-D 200g,FMCG,55,72,0,89,30,26,5,0.82,0.95,Autumn,Diwali,30.91,6408.0,1513.0,4895,10,2025,4,4,1,4,0,1,1.309,4,2025-10-04,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+173,Saunf 100g,Grocery,22,30,0,39,139,14,1,0.33,0.95,Summer,None,36.36,1170.0,312.0,858,3,2025,11,4,2,1,0,0,1.364,125,2025-03-11,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+174,Eraser Apsara,Stationery,4,7,0,86,105,24,3,0.06,0.8,Winter,None,75.0,602.0,258.0,344,2,2025,23,2,4,1,0,0,1.75,81,2025-02-23,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+175,Tape Roll,Stationery,18,28,0,30,20,12,2,0.27,0.8,Rainy,None,55.56,840.0,300.0,540,7,2025,6,6,1,3,1,0,1.556,8,2025-07-06,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+176,Haldirams Namkeen 200g,FMCG,55,75,0,83,74,38,3,0.82,0.9,Rainy,None,36.36,6225.0,1660.0,4565,6,2025,21,0,3,2,0,0,1.364,36,2025-06-21,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+177,Chana Dal 1kg,Grocery,90,112,0,80,51,24,4,1.35,0.9,Rainy,None,24.44,8960.0,1760.0,7200,6,2025,24,3,4,2,0,0,1.244,27,2025-06-24,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+178,Gamcha Cotton Towel,Fashion,55,80,0,69,146,16,3,0.82,0.85,Rainy,None,45.45,5520.0,1725.0,3795,7,2025,26,5,4,3,1,0,1.455,130,2025-07-26,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+179,Eno Sachet 6pc,FMCG,28,38,0,63,240,20,5,0.42,0.8,Autumn,None,35.71,2394.0,630.0,1764,9,2025,27,6,4,3,1,0,1.357,220,2025-09-27,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+180,Apsara Pencil 10pc,Stationery,15,22,0,61,58,28,4,0.22,0.95,Rainy,None,46.67,1342.0,427.0,915,7,2025,14,0,2,3,0,0,1.467,30,2025-07-14,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+181,Salt Tata 1kg,Grocery,18,22,0,124,73,36,4,0.27,0.92,Summer,None,22.22,2728.0,496.0,2232,5,2025,24,3,4,2,0,0,1.222,37,2025-05-24,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+182,Eno Sachet 6pc,FMCG,28,38,10,60,173,20,5,0.42,0.95,Winter,Christmas,35.71,2052.0,372.0,1680,12,2025,4,4,1,4,0,1,1.357,153,2025-12-04,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+183,Masoor Dal 500g,Grocery,60,78,0,65,49,16,3,0.9,0.85,Winter,None,30.0,5070.0,1170.0,3900,2,2025,21,0,3,1,0,0,1.3,33,2025-02-21,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+184,Harpic 500ml,FMCG,75,98,0,35,171,14,2,1.12,0.95,Autumn,None,30.67,3430.0,805.0,2625,10,2025,17,3,3,4,0,0,1.307,157,2025-10-17,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+185,Eveready Battery D 2pc,Electronics,65,90,0,34,107,12,4,0.97,0.92,Winter,None,38.46,3060.0,850.0,2210,1,2025,10,3,2,1,0,0,1.385,95,2025-01-10,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+186,Clinic Plus Shampoo 80ml,FMCG,55,72,0,57,145,20,2,0.82,0.92,Rainy,None,30.91,4104.0,969.0,3135,8,2025,11,4,2,3,0,0,1.309,125,2025-08-11,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+187,Basmati Rice 5kg,Grocery,280,340,0,75,44,34,5,4.2,0.95,Autumn,Ganesh Chaturthi,21.43,25500.0,4500.0,21000,9,2025,9,2,2,3,0,1,1.214,10,2025-09-09,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+188,Chana Dal 1kg,Grocery,90,112,5,108,39,24,3,1.35,0.95,Summer,Holi,24.44,11491.2,1771.2,9720,3,2025,2,2,1,1,0,1,1.244,15,2025-03-02,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+189,Maggi Noodles 70g,FMCG,12,15,0,254,18,60,3,0.18,0.75,Winter,None,25.0,3810.0,762.0,3048,2,2025,22,1,4,1,0,0,1.25,-42,2025-02-22,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+190,Soya Chunks 200g,Grocery,35,48,0,47,128,14,3,0.53,0.92,Winter,None,37.14,2256.0,611.0,1645,2,2025,15,1,3,1,0,0,1.371,114,2025-02-15,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+191,Rajma 500g,Grocery,65,82,0,137,49,14,1,0.97,0.92,Winter,None,26.15,11234.0,2329.0,8905,11,2025,17,3,3,4,0,0,1.262,35,2025-11-17,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+192,Kurta Men Cotton,Fashion,195,320,0,22,93,10,1,2.92,0.75,Winter,None,64.1,7040.0,2750.0,4290,11,2025,16,2,3,4,0,0,1.641,83,2025-11-16,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+193,Stapler Small,Stationery,45,65,0,22,60,10,4,0.67,0.92,Rainy,None,44.44,1430.0,440.0,990,7,2025,9,2,2,3,0,0,1.444,50,2025-07-09,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+194,Maaza 250ml,FMCG,18,22,5,250,239,80,3,0.27,0.8,Autumn,Dussehra,22.22,5225.0,725.0,4500,10,2025,23,2,4,4,0,1,1.222,159,2025-10-23,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+195,Salwar Suit Cotton,Fashion,280,450,0,21,202,10,3,4.2,0.9,Winter,Valentine's Day,60.71,9450.0,3570.0,5880,2,2025,1,1,1,1,0,1,1.607,192,2025-02-01,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+196,Dettol 250ml,FMCG,68,88,0,59,141,18,5,1.02,0.9,Rainy,None,29.41,5192.0,1180.0,4012,8,2025,16,2,3,3,0,0,1.294,123,2025-08-16,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+197,Agarbatti Pack 20pc,FMCG,25,35,0,50,108,20,4,0.38,0.8,Rainy,None,40.0,1750.0,500.0,1250,6,2025,17,3,3,2,0,0,1.4,88,2025-06-17,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+198,Tape Roll,Stationery,18,28,0,41,27,12,3,0.27,0.85,Summer,None,55.56,1148.0,410.0,738,5,2025,19,5,3,2,1,0,1.556,15,2025-05-19,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+199,Dupatta Plain,Fashion,95,150,0,20,204,10,5,1.43,0.9,Winter,None,57.89,3000.0,1100.0,1900,2,2025,18,4,3,1,0,0,1.579,194,2025-02-18,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+200,Glucon-D 200g,FMCG,55,72,10,71,16,26,4,0.82,0.92,Autumn,Diwali,30.91,4600.8,695.8,3905,10,2025,11,4,2,4,0,1,1.309,-10,2025-10-11,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+201,Kurkure 65g,FMCG,18,25,0,193,62,70,1,0.27,0.85,Winter,None,38.89,4825.0,1351.0,3474,2,2025,17,3,3,1,0,0,1.389,-8,2025-02-17,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+202,Paneer 200g,Grocery,85,105,0,56,205,22,1,1.27,0.85,Autumn,None,23.53,5880.0,1120.0,4760,10,2025,7,0,1,4,0,0,1.235,183,2025-10-07,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+203,All Out Refill,FMCG,88,115,0,121,88,16,1,1.32,0.8,Rainy,Independence Day,30.68,13915.0,3267.0,10648,8,2025,10,3,2,3,0,1,1.307,72,2025-08-10,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+204,Basmati Rice 5kg,Grocery,280,340,0,143,213,34,3,4.2,0.95,Winter,None,21.43,48620.0,8580.0,40040,1,2025,18,4,3,1,0,0,1.214,179,2025-01-18,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+205,Mustard Oil 1L,Grocery,155,185,0,93,99,28,3,2.32,0.75,Winter,Lohri,19.35,17205.0,2790.0,14415,1,2025,14,0,2,1,0,1,1.194,71,2025-01-14,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+206,Poha 500g,Grocery,28,36,0,51,22,22,5,0.42,0.75,Winter,None,28.57,1836.0,408.0,1428,11,2025,13,6,2,4,1,0,1.286,0,2025-11-13,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+207,Vegetable Seeds Packet,Agriculture,28,45,0,41,84,14,1,0.42,0.8,Autumn,None,60.71,1845.0,697.0,1148,10,2025,19,5,3,4,1,0,1.607,70,2025-10-19,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+208,Extension Cord 5m,Electronics,175,240,0,18,192,10,4,2.62,0.75,Winter,Christmas,37.14,4320.0,1170.0,3150,12,2025,11,4,2,4,0,1,1.371,182,2025-12-11,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+209,Clinic Plus Shampoo 80ml,FMCG,55,72,5,58,233,20,1,0.82,0.95,Rainy,Raksha Bandhan,30.91,3967.2,777.2,3190,8,2025,22,1,4,3,0,1,1.309,213,2025-08-22,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+210,Toor Dal 1kg,Grocery,130,155,0,92,180,30,3,1.95,0.75,Winter,None,19.23,14260.0,2300.0,11960,12,2025,3,3,1,4,0,0,1.192,150,2025-12-03,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+211,Agarbatti Pack 20pc,FMCG,25,35,5,140,120,20,3,0.38,0.92,Autumn,Navratri,40.0,4655.0,1155.0,3500,9,2025,22,1,4,3,0,1,1.4,100,2025-09-22,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+212,Sunsilk Shampoo 80ml,FMCG,58,75,0,58,21,18,2,0.87,0.75,Winter,None,29.31,4350.0,986.0,3364,1,2025,11,4,2,1,0,0,1.293,3,2025-01-11,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+213,Gulal Colors 100g,FMCG,22,40,0,5,86,10,3,0.33,0.95,Summer,None,81.82,200.0,90.0,110,3,2025,9,2,2,1,0,0,1.818,76,2025-03-09,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+214,Sugar 1kg,Grocery,42,50,0,137,146,48,3,0.63,0.92,Rainy,None,19.05,6850.0,1096.0,5754,6,2025,22,1,4,2,0,0,1.19,98,2025-06-22,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+215,Haldirams Namkeen 200g,FMCG,55,75,0,128,130,38,3,0.82,0.9,Winter,None,36.36,9600.0,2560.0,7040,2,2025,8,1,2,1,0,0,1.364,92,2025-02-08,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+216,Chana Dal 1kg,Grocery,90,112,0,63,24,24,3,1.35,0.85,Autumn,Dussehra,24.44,7056.0,1386.0,5670,10,2025,14,0,2,4,0,1,1.244,0,2025-10-14,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+217,Maaza 250ml,FMCG,18,22,0,217,74,80,2,0.27,0.85,Winter,Chhath Puja,22.22,4774.0,868.0,3906,11,2025,23,2,4,4,0,1,1.222,-6,2025-11-23,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+218,Lay's Chips 26g,FMCG,15,20,0,398,66,80,4,0.22,0.92,Summer,None,33.33,7960.0,1990.0,5970,3,2025,4,4,1,1,0,0,1.333,-14,2025-03-04,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+219,Vim Bar 200g,FMCG,25,32,0,80,222,24,1,0.38,0.8,Summer,Baisakhi,28.0,2560.0,560.0,2000,4,2025,1,1,1,2,0,1,1.28,198,2025-04-01,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+220,Dry Coconut 200g,Grocery,95,125,0,32,202,12,1,1.43,0.9,Summer,None,31.58,4000.0,960.0,3040,5,2025,21,0,3,2,0,0,1.316,190,2025-05-21,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+221,DAP Fertilizer 1kg,Agriculture,55,75,0,41,191,12,4,0.82,0.85,Winter,New Year,36.36,3075.0,820.0,2255,12,2025,8,1,2,4,0,1,1.364,179,2025-12-08,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+222,Eveready Battery AA 4pc,Electronics,55,75,0,37,246,18,2,0.82,0.85,Autumn,Navratri,36.36,2775.0,740.0,2035,9,2025,10,3,2,3,0,1,1.364,228,2025-09-10,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+223,Limca 600ml,FMCG,35,42,5,139,206,60,2,0.53,0.92,Winter,Christmas,20.0,5546.1,681.1,4865,12,2025,18,4,3,4,0,1,1.2,146,2025-12-18,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+224,Lux Soap 75g,FMCG,32,42,0,77,33,28,5,0.48,0.75,Autumn,Navratri,31.25,3234.0,770.0,2464,10,2025,2,2,1,4,0,1,1.312,5,2025-10-02,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+225,Hajmola 100 Tabs,FMCG,45,60,0,71,150,22,4,0.67,0.95,Winter,None,33.33,4260.0,1065.0,3195,12,2025,27,6,4,4,1,0,1.333,128,2025-12-27,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+226,Vicks 10g,FMCG,35,48,0,99,161,16,3,0.53,0.8,Rainy,Janmashtami,37.14,4752.0,1287.0,3465,8,2025,3,3,1,3,0,1,1.371,145,2025-08-03,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+227,Parle-G 800g,FMCG,45,58,0,128,154,48,3,0.67,0.9,Autumn,Dussehra,28.89,7424.0,1664.0,5760,10,2025,2,2,1,4,0,1,1.289,106,2025-10-02,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+228,Apsara Pencil 10pc,Stationery,15,22,5,79,198,28,4,0.22,0.95,Winter,Children's Day,46.67,1651.1,466.1,1185,11,2025,22,1,4,4,0,1,1.467,170,2025-11-22,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+229,Urea Fertilizer 1kg,Agriculture,35,50,0,58,30,16,5,0.53,0.75,Winter,None,42.86,2900.0,870.0,2030,11,2025,12,5,2,4,1,0,1.429,14,2025-11-12,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+230,Colgate 200g,FMCG,82,100,0,77,98,26,3,1.23,0.75,Summer,Holi,21.95,7700.0,1386.0,6314,3,2025,10,3,2,1,0,1,1.22,72,2025-03-10,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+231,Lifebuoy Soap 100g,FMCG,28,36,0,93,165,36,3,0.42,0.85,Autumn,Dussehra,28.57,3348.0,744.0,2604,10,2025,7,0,1,4,0,1,1.286,129,2025-10-07,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+232,Toor Dal 1kg,Grocery,130,155,0,110,214,30,3,1.95,0.85,Rainy,None,19.23,17050.0,2750.0,14300,6,2025,26,5,4,2,1,0,1.192,184,2025-06-26,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+233,Maaza 250ml,FMCG,18,22,0,210,151,80,3,0.27,0.85,Rainy,None,22.22,4620.0,840.0,3780,8,2025,6,6,1,3,1,0,1.222,71,2025-08-06,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+234,Vegetable Seeds Packet,Agriculture,28,45,0,45,171,14,2,0.42,0.95,Rainy,None,60.71,2025.0,765.0,1260,7,2025,24,3,4,3,0,0,1.607,157,2025-07-24,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+235,Maida 1kg,Grocery,32,40,0,31,141,18,1,0.48,0.9,Autumn,Ganesh Chaturthi,25.0,1240.0,248.0,992,9,2025,19,5,3,3,1,1,1.25,123,2025-09-19,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+236,ORS Sachets 5pc,FMCG,22,30,0,70,22,18,1,0.33,0.9,Rainy,None,36.36,2100.0,560.0,1540,7,2025,24,3,4,3,0,0,1.364,4,2025-07-24,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+237,Chana Dal 1kg,Grocery,90,112,0,65,27,24,4,1.35,0.95,Summer,None,24.44,7280.0,1430.0,5850,5,2025,22,1,4,2,0,0,1.244,3,2025-05-22,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+238,Handkerchief 3pc,Fashion,30,45,0,31,177,12,2,0.45,0.8,Winter,None,50.0,1395.0,465.0,930,2,2025,12,5,2,1,1,0,1.5,165,2025-02-12,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+239,All Out Refill,FMCG,88,115,0,49,94,16,2,1.32,0.9,Autumn,None,30.68,5635.0,1323.0,4312,10,2025,10,3,2,4,0,0,1.307,78,2025-10-10,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+240,Maggi Noodles 70g,FMCG,12,15,0,106,142,60,2,0.18,0.8,Summer,None,25.0,1590.0,318.0,1272,5,2025,25,4,4,2,0,0,1.25,82,2025-05-25,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+241,Hide & Seek 100g,FMCG,32,45,5,62,102,24,2,0.48,0.9,Autumn,Ganesh Chaturthi,40.62,2650.5,666.5,1984,9,2025,9,2,2,3,0,1,1.406,78,2025-09-09,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+242,Atta Aashirvaad 10kg,Grocery,330,390,0,116,238,38,4,4.95,0.92,Rainy,None,18.18,45240.0,6960.0,38280,6,2025,1,1,1,2,0,0,1.182,200,2025-06-01,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+243,Vegetable Seeds Packet,Agriculture,28,45,0,93,224,14,4,0.42,0.95,Summer,Holi,60.71,4185.0,1581.0,2604,3,2025,3,3,1,1,0,1,1.607,210,2025-03-03,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+244,Colgate 200g,FMCG,82,100,0,59,49,26,5,1.23,0.85,Summer,None,21.95,5900.0,1062.0,4838,4,2025,26,5,4,2,1,0,1.22,23,2025-04-26,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+245,Paneer 200g,Grocery,85,105,0,65,28,22,4,1.27,0.92,Summer,None,23.53,6825.0,1300.0,5525,4,2025,15,1,3,2,0,0,1.235,6,2025-04-15,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+246,Coriander Powder 100g,Grocery,22,32,0,46,103,18,2,0.33,0.92,Summer,None,45.45,1472.0,460.0,1012,5,2025,19,5,3,2,1,0,1.455,85,2025-05-19,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+247,Sugar 1kg,Grocery,42,50,0,114,206,48,5,0.63,0.92,Winter,None,19.05,5700.0,912.0,4788,11,2025,20,6,3,4,1,0,1.19,158,2025-11-20,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+248,Refined Oil Soya 5L,Grocery,580,680,0,46,92,20,5,8.7,0.92,Winter,None,17.24,31280.0,4600.0,26680,2,2025,13,6,2,1,1,0,1.172,72,2025-02-13,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+249,Tape Roll,Stationery,18,28,0,34,128,12,2,0.27,0.9,Summer,None,55.56,952.0,340.0,612,5,2025,3,3,1,2,0,0,1.556,116,2025-05-03,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+250,Maggi Noodles 4-Pack,FMCG,52,65,0,141,140,36,1,0.78,0.8,Winter,None,25.0,9165.0,1833.0,7332,12,2025,2,2,1,4,0,0,1.25,104,2025-12-02,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+251,Ariel 500g,FMCG,95,120,0,48,120,18,5,1.43,0.92,Winter,Chhath Puja,26.32,5760.0,1200.0,4560,11,2025,18,4,3,4,0,1,1.263,102,2025-11-18,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+252,Saunf 100g,Grocery,22,30,5,42,50,14,3,0.33,0.9,Autumn,Ganesh Chaturthi,36.36,1197.0,273.0,924,9,2025,24,3,4,3,0,1,1.364,36,2025-09-24,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+253,Camphor Tablets 25g,FMCG,28,40,10,41,79,14,2,0.42,0.95,Winter,Valentine's Day,42.86,1476.0,328.0,1148,2,2025,19,5,3,1,1,1,1.429,65,2025-02-19,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+254,Scale 30cm,Stationery,8,12,0,48,177,16,5,0.12,0.75,Winter,Valentine's Day,50.0,576.0,192.0,384,2,2025,15,1,3,1,0,1,1.5,161,2025-02-15,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+255,Diya Set 12pc,FMCG,38,65,10,8,65,10,1,0.57,0.95,Winter,Lohri,71.05,468.0,164.0,304,1,2025,16,2,3,1,0,1,1.711,55,2025-01-16,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+256,CFL Bulb 9W Bajaj,Electronics,65,90,5,26,60,10,3,0.97,0.85,Autumn,Navratri,38.46,2223.0,533.0,1690,10,2025,1,1,1,4,0,1,1.385,50,2025-10-01,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+257,Tea Brooke Bond 500g,Grocery,175,215,0,195,178,32,3,2.62,0.92,Winter,None,22.86,41925.0,7800.0,34125,2,2025,21,0,3,1,0,0,1.229,146,2025-02-21,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+258,Dettol 250ml,FMCG,68,88,0,51,237,18,3,1.02,0.9,Winter,None,29.41,4488.0,1020.0,3468,12,2025,8,1,2,4,0,0,1.294,219,2025-12-08,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+259,Haldirams Mixture 400g,FMCG,110,148,0,89,153,28,1,1.65,0.95,Summer,None,34.55,13172.0,3382.0,9790,3,2025,23,2,4,1,0,0,1.345,125,2025-03-23,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+260,Harpic 500ml,FMCG,75,98,0,39,49,14,4,1.12,0.75,Summer,Labour Day,30.67,3822.0,897.0,2925,5,2025,23,2,4,2,0,1,1.307,35,2025-05-23,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+261,Camphor Tablets 25g,FMCG,28,40,0,34,195,14,4,0.42,0.92,Winter,None,42.86,1360.0,408.0,952,11,2025,20,6,3,4,1,0,1.429,181,2025-11-20,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+262,Handkerchief 3pc,Fashion,30,45,0,47,23,12,4,0.45,0.85,Summer,None,50.0,2115.0,705.0,1410,3,2025,26,5,4,1,1,0,1.5,11,2025-03-26,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+263,Salt Tata 1kg,Grocery,18,22,0,90,212,36,3,0.27,0.95,Rainy,None,22.22,1980.0,360.0,1620,6,2025,7,0,1,2,0,0,1.222,176,2025-06-07,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+264,Vegetable Seeds Packet,Agriculture,28,45,0,67,88,14,3,0.42,0.8,Summer,None,60.71,3015.0,1139.0,1876,4,2025,28,0,4,2,0,0,1.607,74,2025-04-28,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+265,Register A4 100pg,Stationery,35,50,0,39,22,12,3,0.53,0.85,Summer,None,42.86,1950.0,585.0,1365,4,2025,6,6,1,2,1,0,1.429,10,2025-04-06,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+266,Dry Coconut 200g,Grocery,95,125,0,87,150,12,1,1.43,0.8,Autumn,Diwali,31.58,10875.0,2610.0,8265,10,2025,19,5,3,4,1,1,1.316,138,2025-10-19,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+267,Ariel 500g,FMCG,95,120,0,55,25,18,4,1.43,0.95,Summer,None,26.32,6600.0,1375.0,5225,4,2025,3,3,1,2,0,0,1.263,7,2025-04-03,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+268,Haldi Powder 100g,Grocery,28,38,0,50,150,20,3,0.42,0.9,Rainy,Independence Day,35.71,1900.0,500.0,1400,8,2025,11,4,2,3,0,1,1.357,130,2025-08-11,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+269,Mosquito Coil 10pc,FMCG,32,45,0,126,71,22,2,0.48,0.75,Summer,None,40.62,5670.0,1638.0,4032,4,2025,10,3,2,2,0,0,1.406,49,2025-04-10,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+270,Haldirams Namkeen 200g,FMCG,55,75,0,95,83,38,2,0.82,0.75,Winter,None,36.36,7125.0,1900.0,5225,2,2025,9,2,2,1,0,0,1.364,45,2025-02-09,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+271,Poha 500g,Grocery,28,36,0,66,240,22,4,0.42,0.8,Summer,None,28.57,2376.0,528.0,1848,5,2025,7,0,1,2,0,0,1.286,218,2025-05-07,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+272,Rajma 500g,Grocery,65,82,5,34,188,14,3,0.97,0.92,Rainy,Independence Day,26.15,2648.6,438.6,2210,8,2025,10,3,2,3,0,1,1.262,174,2025-08-10,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+273,Lay's Chips 26g,FMCG,15,20,0,269,223,80,3,0.22,0.92,Rainy,None,33.33,5380.0,1345.0,4035,8,2025,7,0,1,3,0,0,1.333,143,2025-08-07,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+274,Vim Bar 200g,FMCG,25,32,0,53,97,24,1,0.38,0.95,Summer,None,28.0,1696.0,371.0,1325,3,2025,21,0,3,1,0,0,1.28,73,2025-03-21,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+275,Paneer 200g,Grocery,85,105,0,66,247,22,2,1.27,0.8,Summer,None,23.53,6930.0,1320.0,5610,3,2025,12,5,2,1,1,0,1.235,225,2025-03-12,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+276,Vicks 10g,FMCG,35,48,0,51,186,16,3,0.53,0.85,Summer,None,37.14,2448.0,663.0,1785,4,2025,26,5,4,2,1,0,1.371,170,2025-04-26,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+277,LED Bulb 9W Philips,Electronics,95,130,0,26,154,12,4,1.43,0.8,Rainy,None,36.84,3380.0,910.0,2470,6,2025,23,2,4,2,0,0,1.368,142,2025-06-23,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+278,Kurta Men Cotton,Fashion,195,320,0,21,198,10,5,2.92,0.8,Rainy,None,64.1,6720.0,2625.0,4095,6,2025,24,3,4,2,0,0,1.641,188,2025-06-24,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+279,Sooji 500g,Grocery,24,32,10,79,161,16,3,0.36,0.95,Autumn,Navratri,33.33,2275.2,379.2,1896,10,2025,5,5,1,4,1,1,1.333,145,2025-10-05,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+280,Gamcha Cotton Towel,Fashion,55,80,0,91,89,16,4,0.82,0.8,Summer,None,45.45,7280.0,2275.0,5005,5,2025,9,2,2,2,0,0,1.455,73,2025-05-09,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+281,Glucon-D 200g,FMCG,55,72,0,190,41,26,5,0.82,0.95,Summer,None,30.91,13680.0,3230.0,10450,5,2025,20,6,3,2,1,0,1.309,15,2025-05-20,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+282,Soya Chunks 200g,Grocery,35,48,0,38,206,14,1,0.53,0.8,Winter,Republic Day,37.14,1824.0,494.0,1330,1,2025,11,4,2,1,0,1,1.371,192,2025-01-11,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+283,Frooti 200ml,FMCG,12,15,0,272,236,100,3,0.18,0.95,Rainy,None,25.0,4080.0,816.0,3264,7,2025,8,1,2,3,0,0,1.25,136,2025-07-08,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+284,Thums Up 600ml,FMCG,38,45,0,216,115,72,4,0.57,0.8,Autumn,Dussehra,18.42,9720.0,1512.0,8208,10,2025,11,4,2,4,0,1,1.184,43,2025-10-11,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+285,Vicks 10g,FMCG,35,48,0,47,77,16,3,0.53,0.8,Autumn,None,37.14,2256.0,611.0,1645,9,2025,14,0,2,3,0,0,1.371,61,2025-09-14,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+286,CFL Bulb 9W Bajaj,Electronics,65,90,0,22,33,10,4,0.97,0.75,Rainy,None,38.46,1980.0,550.0,1430,7,2025,28,0,4,3,0,0,1.385,23,2025-07-28,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+287,Mustard Oil 1L,Grocery,155,185,0,74,27,28,5,2.32,0.9,Summer,None,19.35,13690.0,2220.0,11470,5,2025,11,4,2,2,0,0,1.194,-1,2025-05-11,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+288,Atta Aashirvaad 10kg,Grocery,330,390,0,78,27,38,3,4.95,0.75,Rainy,None,18.18,30420.0,4680.0,25740,8,2025,14,0,2,3,0,0,1.182,-11,2025-08-14,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+289,Pepsodent 200g,FMCG,75,92,0,59,31,22,4,1.12,0.75,Summer,None,22.67,5428.0,1003.0,4425,3,2025,16,2,3,1,0,0,1.227,9,2025-03-16,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+290,Kurta Men Cotton,Fashion,195,320,0,25,60,10,1,2.92,0.9,Winter,None,64.1,8000.0,3125.0,4875,2,2025,27,6,4,1,1,0,1.641,50,2025-02-27,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+291,Daliya 500g,Grocery,28,38,0,43,112,12,3,0.42,0.92,Winter,New Year,35.71,1634.0,430.0,1204,12,2025,11,4,2,4,0,1,1.357,100,2025-12-11,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+292,Scale 30cm,Stationery,8,12,0,56,184,16,3,0.12,0.75,Rainy,None,50.0,672.0,224.0,448,8,2025,7,0,1,3,0,0,1.5,168,2025-08-07,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+293,Lifebuoy Soap 100g,FMCG,28,36,0,119,97,36,5,0.42,0.92,Winter,None,28.57,4284.0,952.0,3332,2,2025,21,0,3,1,0,0,1.286,61,2025-02-21,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+294,Surf Excel 1kg,FMCG,130,165,0,55,145,22,3,1.95,0.8,Winter,Republic Day,26.92,9075.0,1925.0,7150,1,2025,24,3,4,1,0,1,1.269,123,2025-01-24,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+295,Haldi Powder 100g,Grocery,28,38,0,49,131,20,5,0.42,0.92,Rainy,Independence Day,35.71,1862.0,490.0,1372,8,2025,6,6,1,3,1,1,1.357,111,2025-08-06,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+296,Tea Brooke Bond 500g,Grocery,175,215,0,160,98,32,3,2.62,0.9,Rainy,None,22.86,34400.0,6400.0,28000,7,2025,27,6,4,3,1,0,1.229,66,2025-07-27,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+297,Colgate 200g,FMCG,82,100,0,80,108,26,3,1.23,0.8,Autumn,Navratri,21.95,8000.0,1440.0,6560,9,2025,15,1,3,3,0,1,1.22,82,2025-09-15,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+298,Parle-G 800g,FMCG,45,58,0,137,77,48,4,0.67,0.85,Summer,Labour Day,28.89,7946.0,1781.0,6165,5,2025,16,2,3,2,0,1,1.289,29,2025-05-16,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+299,Eveready Battery AA 4pc,Electronics,55,75,0,53,78,18,3,0.82,0.75,Rainy,None,36.36,3975.0,1060.0,2915,8,2025,6,6,1,3,1,0,1.364,60,2025-08-06,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+300,Socks Cotton 3 pair,Fashion,55,80,0,30,188,14,1,0.82,0.92,Autumn,None,45.45,2400.0,750.0,1650,9,2025,19,5,3,3,1,0,1.455,174,2025-09-19,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+301,Basmati Rice 5kg,Grocery,280,340,0,81,70,34,3,4.2,0.85,Autumn,Navratri,21.43,27540.0,4860.0,22680,10,2025,20,6,3,4,1,1,1.214,36,2025-10-20,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+302,Eraser Apsara,Stationery,4,7,0,64,119,24,3,0.06,0.85,Rainy,None,75.0,448.0,192.0,256,6,2025,16,2,3,2,0,0,1.75,95,2025-06-16,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+303,Lifebuoy Soap 100g,FMCG,28,36,0,108,229,36,3,0.42,0.75,Winter,None,28.57,3888.0,864.0,3024,11,2025,26,5,4,4,1,0,1.286,193,2025-11-26,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+304,Apsara Pencil 10pc,Stationery,15,22,0,73,219,28,4,0.22,0.95,Rainy,None,46.67,1606.0,511.0,1095,7,2025,18,4,3,3,0,0,1.467,191,2025-07-18,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+305,Rajma 500g,Grocery,65,82,0,54,171,14,3,0.97,0.92,Winter,None,26.15,4428.0,918.0,3510,1,2025,14,0,2,1,0,0,1.262,157,2025-01-14,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+306,Kurta Men Cotton,Fashion,195,320,0,15,33,10,1,2.92,0.92,Summer,None,64.1,4800.0,1875.0,2925,4,2025,16,2,3,2,0,0,1.641,23,2025-04-16,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+307,Neem Pesticide 100ml,Agriculture,65,95,5,95,241,10,1,0.97,0.75,Rainy,Independence Day,46.15,8573.75,2398.75,6175,8,2025,11,4,2,3,0,1,1.462,231,2025-08-11,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+308,Harpic 500ml,FMCG,75,98,0,33,103,14,4,1.12,0.75,Winter,None,30.67,3234.0,759.0,2475,11,2025,28,0,4,4,0,0,1.307,89,2025-11-28,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+309,Parle-G 800g,FMCG,45,58,5,125,31,48,3,0.67,0.8,Winter,Christmas,28.89,6887.5,1262.5,5625,12,2025,25,4,4,4,0,1,1.289,-17,2025-12-25,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+310,Atta Aashirvaad 10kg,Grocery,330,390,0,156,209,38,1,4.95,0.95,Winter,None,18.18,60840.0,9360.0,51480,11,2025,7,0,1,4,0,0,1.182,171,2025-11-07,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+311,Garden Pump Sprayer 1L,Agriculture,145,210,0,35,82,10,3,2.17,0.75,Rainy,Raksha Bandhan,44.83,7350.0,2275.0,5075,8,2025,20,6,3,3,1,1,1.448,72,2025-08-20,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+312,Chana Dal 1kg,Grocery,90,112,0,57,217,24,4,1.35,0.75,Rainy,None,24.44,6384.0,1254.0,5130,6,2025,24,3,4,2,0,0,1.244,193,2025-06-24,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+313,Register A4 100pg,Stationery,35,50,0,37,100,12,3,0.53,0.8,Summer,None,42.86,1850.0,555.0,1295,5,2025,27,6,4,2,1,0,1.429,88,2025-05-27,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+314,Maggi Noodles 70g,FMCG,12,15,0,149,175,60,3,0.18,0.75,Summer,Baisakhi,25.0,2235.0,447.0,1788,4,2025,14,0,2,2,0,1,1.25,115,2025-04-14,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+315,Salwar Suit Cotton,Fashion,280,450,10,18,200,10,4,4.2,0.8,Winter,Republic Day,60.71,7290.0,2250.0,5040,1,2025,5,5,1,1,1,1,1.607,190,2025-01-05,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+316,Hajmola 100 Tabs,FMCG,45,60,5,104,22,22,5,0.67,0.8,Summer,Holi,33.33,5928.0,1248.0,4680,3,2025,26,5,4,1,1,1,1.333,0,2025-03-26,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+317,DAP Fertilizer 1kg,Agriculture,55,75,0,36,159,12,4,0.82,0.8,Autumn,Navratri,36.36,2700.0,720.0,1980,10,2025,23,2,4,4,0,1,1.364,147,2025-10-23,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+318,Glucon-D 200g,FMCG,55,72,0,61,25,26,5,0.82,0.85,Winter,Republic Day,30.91,4392.0,1037.0,3355,1,2025,19,5,3,1,1,1,1.309,-1,2025-01-19,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+319,Dry Coconut 200g,Grocery,95,125,0,27,213,12,3,1.43,0.8,Summer,None,31.58,3375.0,810.0,2565,4,2025,24,3,4,2,0,0,1.316,201,2025-04-24,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+320,Camphor Tablets 25g,FMCG,28,40,10,98,215,14,4,0.42,0.75,Autumn,Diwali,42.86,3528.0,784.0,2744,10,2025,27,6,4,4,1,1,1.429,201,2025-10-27,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+321,Kurkure 65g,FMCG,18,25,0,252,31,70,3,0.27,0.8,Autumn,Ganesh Chaturthi,38.89,6300.0,1764.0,4536,9,2025,5,5,1,3,1,1,1.389,-39,2025-09-05,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+322,Rajma 500g,Grocery,65,82,0,39,212,14,2,0.97,0.75,Summer,None,26.15,3198.0,663.0,2535,4,2025,23,2,4,2,0,0,1.262,198,2025-04-23,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+323,Dupatta Plain,Fashion,95,150,5,26,15,10,3,1.43,0.95,Winter,Children's Day,57.89,3705.0,1235.0,2470,11,2025,6,6,1,4,1,1,1.579,5,2025-11-06,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+324,Classmate Notebook 200pg,Stationery,48,65,0,101,205,32,3,0.72,0.8,Winter,None,35.42,6565.0,1717.0,4848,11,2025,7,0,1,4,0,0,1.354,173,2025-11-07,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+325,Handkerchief 3pc,Fashion,30,45,0,34,155,12,4,0.45,0.95,Winter,Valentine's Day,50.0,1530.0,510.0,1020,2,2025,16,2,3,1,0,1,1.5,143,2025-02-16,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+326,Clinic Plus Shampoo 80ml,FMCG,55,72,0,79,168,20,5,0.82,0.95,Summer,None,30.91,5688.0,1343.0,4345,4,2025,5,5,1,2,1,0,1.309,148,2025-04-05,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+327,Parle-G 800g,FMCG,45,58,0,190,248,48,4,0.67,0.95,Autumn,None,28.89,11020.0,2470.0,8550,9,2025,10,3,2,3,0,0,1.289,200,2025-09-10,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+328,Paneer 200g,Grocery,85,105,0,66,227,22,3,1.27,0.92,Rainy,None,23.53,6930.0,1320.0,5610,6,2025,4,4,1,2,0,0,1.235,205,2025-06-04,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+329,Toor Dal 1kg,Grocery,130,155,0,75,222,30,5,1.95,0.92,Summer,None,19.23,11625.0,1875.0,9750,3,2025,8,1,2,1,0,0,1.192,192,2025-03-08,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+330,Atta Aashirvaad 10kg,Grocery,330,390,0,117,203,38,5,4.95,0.8,Rainy,None,18.18,45630.0,7020.0,38610,6,2025,22,1,4,2,0,0,1.182,165,2025-06-22,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+331,Lux Soap 75g,FMCG,32,42,0,124,117,28,5,0.48,0.85,Summer,Baisakhi,31.25,5208.0,1240.0,3968,4,2025,20,6,3,2,1,1,1.312,89,2025-04-20,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+332,Mosquito Coil 10pc,FMCG,32,45,0,140,22,22,4,0.48,0.92,Summer,Holi,40.62,6300.0,1820.0,4480,3,2025,13,6,2,1,1,1,1.406,0,2025-03-13,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+333,Red Chilli Powder 100g,Grocery,30,42,0,51,132,19,3,0.45,0.95,Winter,None,40.0,2142.0,612.0,1530,11,2025,19,5,3,4,1,0,1.4,113,2025-11-19,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+334,Haldi Powder 100g,Grocery,28,38,0,61,163,20,4,0.42,0.92,Summer,Holi,35.71,2318.0,610.0,1708,3,2025,9,2,2,1,0,1,1.357,143,2025-03-09,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+335,CFL Bulb 9W Bajaj,Electronics,65,90,5,28,134,10,2,0.97,0.92,Autumn,Navratri,38.46,2394.0,574.0,1820,9,2025,22,1,4,3,0,1,1.385,124,2025-09-22,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+336,Dry Coconut 200g,Grocery,95,125,0,30,153,12,3,1.43,0.95,Rainy,None,31.58,3750.0,900.0,2850,7,2025,1,1,1,3,0,0,1.316,141,2025-07-01,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+337,Glucon-D 200g,FMCG,55,72,0,108,53,26,5,0.82,0.92,Summer,None,30.91,7776.0,1836.0,5940,3,2025,17,3,3,1,0,0,1.309,27,2025-03-17,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+338,Saunf 100g,Grocery,22,30,0,28,122,14,1,0.33,0.95,Rainy,None,36.36,840.0,224.0,616,8,2025,4,4,1,3,0,0,1.364,108,2025-08-04,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+339,Sooji 500g,Grocery,24,32,0,40,37,16,2,0.36,0.8,Rainy,None,33.33,1280.0,320.0,960,6,2025,19,5,3,2,1,0,1.333,21,2025-06-19,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+340,Masoor Dal 500g,Grocery,60,78,5,32,209,16,3,0.9,0.95,Winter,Children's Day,30.0,2371.2,451.2,1920,11,2025,14,0,2,4,0,1,1.3,193,2025-11-14,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+341,Tea Brooke Bond 500g,Grocery,175,215,0,78,206,32,3,2.62,0.9,Rainy,None,22.86,16770.0,3120.0,13650,7,2025,2,2,1,3,0,0,1.229,174,2025-07-02,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+342,Chana Dal 1kg,Grocery,90,112,0,71,169,24,5,1.35,0.8,Winter,None,24.44,7952.0,1562.0,6390,12,2025,7,0,1,4,0,0,1.244,145,2025-12-07,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+343,Moong Dal 500g,Grocery,72,90,5,45,116,18,3,1.08,0.85,Rainy,Independence Day,25.0,3847.5,607.5,3240,8,2025,15,1,3,3,0,1,1.25,98,2025-08-15,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+344,Stapler Small,Stationery,45,65,0,17,221,10,3,0.67,0.92,Winter,None,44.44,1105.0,340.0,765,2,2025,23,2,4,1,0,0,1.444,211,2025-02-23,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+345,Vicks 10g,FMCG,35,48,5,52,217,16,1,0.53,0.95,Summer,Holi,37.14,2371.2,551.2,1820,3,2025,19,5,3,1,1,1,1.371,201,2025-03-19,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+346,Kurta Men Cotton,Fashion,195,320,0,21,71,10,3,2.92,0.95,Autumn,None,64.1,6720.0,2625.0,4095,9,2025,2,2,1,3,0,0,1.641,61,2025-09-02,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+347,Apsara Pencil 10pc,Stationery,15,22,0,86,215,28,3,0.22,0.95,Rainy,None,46.67,1892.0,602.0,1290,7,2025,27,6,4,3,1,0,1.467,187,2025-07-27,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+348,Eveready Battery D 2pc,Electronics,65,90,0,26,39,12,5,0.97,0.95,Autumn,None,38.46,2340.0,650.0,1690,9,2025,7,0,1,3,0,0,1.385,27,2025-09-07,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+349,Dry Coconut 200g,Grocery,95,125,0,26,205,12,3,1.43,0.95,Summer,Baisakhi,31.58,3250.0,780.0,2470,4,2025,22,1,4,2,0,1,1.316,193,2025-04-22,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+350,Urea Fertilizer 1kg,Agriculture,35,50,5,41,175,16,1,0.53,0.95,Winter,Republic Day,42.86,1947.5,512.5,1435,1,2025,10,3,2,1,0,1,1.429,159,2025-01-10,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+351,Paneer 200g,Grocery,85,105,0,69,86,22,5,1.27,0.8,Winter,None,23.53,7245.0,1380.0,5865,12,2025,6,6,1,4,1,0,1.235,64,2025-12-06,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+352,Haldirams Namkeen 200g,FMCG,55,75,0,121,47,38,2,0.82,0.85,Rainy,None,36.36,9075.0,2420.0,6655,7,2025,13,6,2,3,1,0,1.364,9,2025-07-13,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+353,Mustard Oil 1L,Grocery,155,185,0,87,236,28,4,2.32,0.92,Winter,None,19.35,16095.0,2610.0,13485,12,2025,4,4,1,4,0,0,1.194,208,2025-12-04,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+354,Maggi Noodles 70g,FMCG,12,15,0,284,19,60,3,0.18,0.8,Rainy,None,25.0,4260.0,852.0,3408,6,2025,9,2,2,2,0,0,1.25,-41,2025-06-09,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+355,Daliya 500g,Grocery,28,38,0,42,214,12,2,0.42,0.9,Winter,Lohri,35.71,1596.0,420.0,1176,1,2025,14,0,2,1,0,1,1.357,202,2025-01-14,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+356,Vim Bar 200g,FMCG,25,32,0,71,87,24,4,0.38,0.9,Summer,Baisakhi,28.0,2272.0,497.0,1775,4,2025,27,6,4,2,1,1,1.28,63,2025-04-27,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+357,Soya Chunks 200g,Grocery,35,48,0,37,121,14,1,0.53,0.9,Winter,Children's Day,37.14,1776.0,481.0,1295,11,2025,25,4,4,4,0,1,1.371,107,2025-11-25,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+358,LED Bulb 9W Philips,Electronics,95,130,0,31,49,12,3,1.43,0.95,Summer,None,36.84,4030.0,1085.0,2945,5,2025,20,6,3,2,1,0,1.368,37,2025-05-20,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+359,Maggi Noodles 4-Pack,FMCG,52,65,0,111,196,36,3,0.78,0.8,Autumn,None,25.0,7215.0,1443.0,5772,9,2025,15,1,3,3,0,0,1.25,160,2025-09-15,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+360,Haldi Powder 100g,Grocery,28,38,0,43,115,20,1,0.42,0.9,Summer,None,35.71,1634.0,430.0,1204,3,2025,16,2,3,1,0,0,1.357,95,2025-03-16,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+361,Hide & Seek 100g,FMCG,32,45,0,74,106,24,3,0.48,0.8,Rainy,None,40.62,3330.0,962.0,2368,6,2025,17,3,3,2,0,0,1.406,82,2025-06-17,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+362,Dettol 250ml,FMCG,68,88,0,72,102,18,2,1.02,0.8,Winter,Makar Sankranti,29.41,6336.0,1440.0,4896,1,2025,23,2,4,1,0,1,1.294,84,2025-01-23,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+363,Harpic 500ml,FMCG,75,98,0,51,191,14,4,1.12,0.9,Autumn,Ganesh Chaturthi,30.67,4998.0,1173.0,3825,9,2025,4,4,1,3,0,1,1.307,177,2025-09-04,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+364,Diya Set 12pc,FMCG,38,65,0,8,234,10,5,0.57,0.8,Rainy,None,71.05,520.0,216.0,304,7,2025,1,1,1,3,0,0,1.711,224,2025-07-01,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+365,Dupatta Plain,Fashion,95,150,0,19,50,10,5,1.43,0.75,Rainy,None,57.89,2850.0,1045.0,1805,7,2025,8,1,2,3,0,0,1.579,40,2025-07-08,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+366,Glucon-D 200g,FMCG,55,72,0,117,128,26,5,0.82,0.75,Summer,None,30.91,8424.0,1989.0,6435,3,2025,5,5,1,1,1,0,1.309,102,2025-03-05,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+367,Sketch Pens 12pc,Stationery,32,48,0,43,198,14,1,0.48,0.9,Summer,Labour Day,50.0,2064.0,688.0,1376,5,2025,26,5,4,2,1,1,1.5,184,2025-05-26,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+368,Salt Tata 1kg,Grocery,18,22,0,90,22,36,1,0.27,0.9,Rainy,None,22.22,1980.0,360.0,1620,7,2025,16,2,3,3,0,0,1.222,-14,2025-07-16,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+369,CFL Bulb 9W Bajaj,Electronics,65,90,0,79,184,10,3,0.97,0.85,Autumn,Diwali,38.46,7110.0,1975.0,5135,10,2025,22,1,4,4,0,1,1.385,174,2025-10-22,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+370,Maggi Noodles 70g,FMCG,12,15,0,190,111,60,3,0.18,0.8,Autumn,None,25.0,2850.0,570.0,2280,9,2025,6,6,1,3,1,0,1.25,51,2025-09-06,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+371,Coriander Powder 100g,Grocery,22,32,0,44,114,18,5,0.33,0.92,Autumn,Navratri,45.45,1408.0,440.0,968,9,2025,20,6,3,3,1,1,1.455,96,2025-09-20,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+372,Vicks 10g,FMCG,35,48,0,120,91,16,1,0.53,0.75,Winter,Republic Day,37.14,5760.0,1560.0,4200,1,2025,7,0,1,1,0,1,1.371,75,2025-01-07,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+373,Garden Pump Sprayer 1L,Agriculture,145,210,0,27,98,10,5,2.17,0.85,Rainy,None,44.83,5670.0,1755.0,3915,6,2025,26,5,4,2,1,0,1.448,88,2025-06-26,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+374,Paneer 200g,Grocery,85,105,0,52,119,22,1,1.27,0.92,Winter,None,23.53,5460.0,1040.0,4420,1,2025,19,5,3,1,1,0,1.235,97,2025-01-19,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+375,Extension Cord 5m,Electronics,175,240,10,16,54,10,3,2.62,0.85,Winter,Chhath Puja,37.14,3456.0,656.0,2800,11,2025,6,6,1,4,1,1,1.371,44,2025-11-06,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+376,Classmate Notebook 200pg,Stationery,48,65,0,78,228,32,2,0.72,0.8,Winter,Christmas,35.42,5070.0,1326.0,3744,12,2025,8,1,2,4,0,1,1.354,196,2025-12-08,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+377,Scale 30cm,Stationery,8,12,0,59,124,16,3,0.12,0.95,Autumn,Ganesh Chaturthi,50.0,708.0,236.0,472,9,2025,17,3,3,3,0,1,1.5,108,2025-09-17,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+378,Tea Tata Gold 250g,Grocery,105,130,0,138,48,26,1,1.57,0.85,Winter,None,23.81,17940.0,3450.0,14490,11,2025,9,2,2,4,0,0,1.238,22,2025-11-09,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+379,Socks Cotton 3 pair,Fashion,55,80,0,47,125,14,5,0.82,0.95,Winter,None,45.45,3760.0,1175.0,2585,2,2025,2,2,1,1,0,0,1.455,111,2025-02-02,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+380,Diya Set 12pc,FMCG,38,65,5,7,146,10,4,0.57,0.85,Rainy,Independence Day,71.05,432.25,166.25,266,8,2025,3,3,1,3,0,1,1.711,136,2025-08-03,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+381,Gamcha Cotton Towel,Fashion,55,80,5,119,238,16,3,0.82,0.85,Summer,Labour Day,45.45,9044.0,2499.0,6545,5,2025,16,2,3,2,0,1,1.455,222,2025-05-16,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+382,Basmati Rice 5kg,Grocery,280,340,0,98,228,34,2,4.2,0.9,Summer,None,21.43,33320.0,5880.0,27440,3,2025,24,3,4,1,0,0,1.214,194,2025-03-24,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+383,Sooji 500g,Grocery,24,32,0,50,149,16,4,0.36,0.8,Autumn,None,33.33,1600.0,400.0,1200,9,2025,18,4,3,3,0,0,1.333,133,2025-09-18,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+384,Haldirams Namkeen 200g,FMCG,55,75,0,121,114,38,5,0.82,0.9,Summer,None,36.36,9075.0,2420.0,6655,3,2025,12,5,2,1,1,0,1.364,76,2025-03-12,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+385,Atta Aashirvaad 10kg,Grocery,330,390,0,82,168,38,1,4.95,0.92,Summer,Holi,18.18,31980.0,4920.0,27060,3,2025,15,1,3,1,0,1,1.182,130,2025-03-15,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+386,Tape Roll,Stationery,18,28,0,45,35,12,4,0.27,0.92,Summer,None,55.56,1260.0,450.0,810,5,2025,1,1,1,2,0,0,1.556,23,2025-05-01,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+387,Eveready Battery AA 4pc,Electronics,55,75,0,71,167,18,5,0.82,0.75,Winter,None,36.36,5325.0,1420.0,3905,2,2025,20,6,3,1,1,0,1.364,149,2025-02-20,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+388,Extension Cord 5m,Electronics,175,240,0,21,52,10,5,2.62,0.95,Winter,None,37.14,5040.0,1365.0,3675,2,2025,17,3,3,1,0,0,1.371,42,2025-02-17,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+389,Salwar Suit Cotton,Fashion,280,450,0,23,249,10,4,4.2,0.75,Summer,Labour Day,60.71,10350.0,3910.0,6440,5,2025,20,6,3,2,1,1,1.607,239,2025-05-20,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+390,Poha 500g,Grocery,28,36,10,70,207,22,2,0.42,0.75,Autumn,Dussehra,28.57,2268.0,308.0,1960,10,2025,26,5,4,4,1,1,1.286,185,2025-10-26,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+391,Dry Coconut 200g,Grocery,95,125,0,49,129,12,2,1.43,0.85,Autumn,Navratri,31.58,6125.0,1470.0,4655,9,2025,14,0,2,3,0,1,1.316,117,2025-09-14,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+392,Thums Up 600ml,FMCG,38,45,5,375,82,72,4,0.57,0.92,Summer,Holi,18.42,16031.25,1781.25,14250,3,2025,3,3,1,1,0,1,1.184,10,2025-03-03,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+393,Good Day Biscuit 250g,FMCG,28,38,0,84,27,34,4,0.42,0.8,Winter,None,35.71,3192.0,840.0,2352,2,2025,17,3,3,1,0,0,1.357,-7,2025-02-17,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+394,Mosquito Coil 10pc,FMCG,32,45,10,66,205,22,3,0.48,0.85,Winter,New Year,40.62,2673.0,561.0,2112,12,2025,3,3,1,4,0,1,1.406,183,2025-12-03,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+395,Frooti 200ml,FMCG,12,15,10,1027,185,100,3,0.18,0.95,Summer,Baisakhi,25.0,13864.5,1540.5,12324,4,2025,15,1,3,2,0,1,1.25,85,2025-04-15,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+396,Ariel 500g,FMCG,95,120,0,37,126,18,3,1.43,0.95,Winter,None,26.32,4440.0,925.0,3515,1,2025,8,1,2,1,0,0,1.263,108,2025-01-08,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+397,Vicks 10g,FMCG,35,48,0,90,77,16,5,0.53,0.85,Winter,None,37.14,4320.0,1170.0,3150,11,2025,22,1,4,4,0,0,1.371,61,2025-11-22,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+398,Vegetable Seeds Packet,Agriculture,28,45,10,44,237,14,3,0.42,0.75,Rainy,Janmashtami,60.71,1782.0,550.0,1232,8,2025,3,3,1,3,0,1,1.607,223,2025-08-03,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India
+399,Fevicol 50g,Stationery,20,28,0,59,206,18,1,0.3,0.95,Winter,None,40.0,1652.0,472.0,1180,12,2025,19,5,3,4,1,0,1.4,188,2025-12-19,Ramesh General Store,"Bhopal, Madhya Pradesh",Central India

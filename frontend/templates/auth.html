@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Login — ForeSight Inventory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070810;--surface:#111420;--surface2:#181c2e;--border:rgba(255,255,255,.07);--accent:#6c63ff;--accent2:#ff6b9d;--text:#eef0f8;--text2:#9ba3c4;--text3:#5a6080;--success:#00e676;--danger:#ff5252;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--text);font-family:'Space Grotesk',sans-serif;min-height:100vh;display:flex;overflow:hidden;}
+.orb{position:fixed;border-radius:50%;pointer-events:none;animation:fl 12s ease-in-out infinite;}
+.o1{width:600px;height:600px;top:-150px;left:-100px;background:radial-gradient(circle,rgba(108,99,255,.12),transparent 70%);}
+.o2{width:500px;height:500px;bottom:-150px;right:-100px;background:radial-gradient(circle,rgba(255,107,157,.09),transparent 70%);animation-delay:-6s;}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-40px)}}
+.grid-bg{position:fixed;inset:0;background-image:linear-gradient(rgba(108,99,255,.025)1px,transparent 1px),linear-gradient(90deg,rgba(108,99,255,.025)1px,transparent 1px);background-size:56px 56px;pointer-events:none;}
+
+/* LEFT PANEL */
+.left{flex:1;display:flex;flex-direction:column;justify-content:center;padding:60px;position:relative;z-index:1;}
+.brand{display:flex;align-items:center;gap:12px;margin-bottom:56px;}
+.brand-icon{width:44px;height:44px;background:linear-gradient(135deg,#6c63ff,#ff6b9d);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:0 4px 20px rgba(108,99,255,.4);}
+.brand-name{font-family:'Outfit',sans-serif;font-size:20px;font-weight:800;letter-spacing:-.5px;}
+h1{font-family:'Outfit',sans-serif;font-size:52px;font-weight:900;line-height:1.1;letter-spacing:-2px;margin-bottom:16px;}
+h1 .grad{background:linear-gradient(135deg,#6c63ff,#ff6b9d);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.left-sub{font-size:17px;color:var(--text2);margin-bottom:48px;line-height:1.6;max-width:440px;}
+.features{display:flex;flex-direction:column;gap:14px;}
+.feature-item{display:flex;align-items:center;gap:12px;color:var(--text2);font-size:14px;}
+.feat-icon{width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;}
+.feat-icon.p{background:rgba(108,99,255,.2);} .feat-icon.g{background:rgba(0,230,118,.15);} .feat-icon.y{background:rgba(255,217,61,.15);} .feat-icon.b{background:rgba(0,212,255,.15);}
+.bottom-stats{display:flex;gap:40px;margin-top:48px;padding-top:32px;border-top:1px solid var(--border);}
+.bstat-num{font-family:'Outfit',sans-serif;font-size:26px;font-weight:800;color:var(--accent);}
+.bstat-label{font-size:12px;color:var(--text3);}
+
+/* RIGHT PANEL */
+.right{width:480px;min-height:100vh;background:rgba(17,20,32,.9);border-left:1px solid var(--border);display:flex;align-items:center;justify-content:center;padding:40px;position:relative;z-index:1;backdrop-filter:blur(20px);}
+.auth-card{width:100%;max-width:400px;}
+.tab-row{display:flex;background:var(--surface2);border-radius:12px;padding:4px;margin-bottom:28px;}
+.tab-btn{flex:1;padding:10px;background:none;border:none;color:var(--text2);font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:600;border-radius:9px;cursor:pointer;transition:.2s;}
+.tab-btn.active{background:var(--accent);color:#fff;box-shadow:0 4px 16px rgba(108,99,255,.3);}
+.form-group{margin-bottom:16px;}
+.form-label{display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--text2);margin-bottom:7px;}
+.form-ctrl{width:100%;background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:12px 14px;color:var(--text);font-family:'Space Grotesk',sans-serif;font-size:14px;outline:none;transition:.2s;}
+.form-ctrl:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(108,99,255,.12);}
+.form-ctrl::placeholder{color:var(--text3);}
+.form-ctrl option{background:var(--surface2);}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.btn-submit{width:100%;padding:13px;background:linear-gradient(135deg,#6c63ff,#8b83ff);border:none;border-radius:10px;color:#fff;font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:.2s;margin-top:4px;}
+.btn-submit:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(108,99,255,.4);}
+.btn-submit:disabled{opacity:.5;cursor:not-allowed;transform:none;}
+.divider{text-align:center;color:var(--text3);font-size:12px;margin:18px 0;position:relative;}
+.divider::before,.divider::after{content:'';position:absolute;top:50%;width:40%;height:1px;background:var(--border);}
+.divider::before{left:0;} .divider::after{right:0;}
+.demo-btn{width:100%;padding:11px;background:transparent;border:1px solid var(--border);border-radius:10px;color:var(--text2);font-family:'Space Grotesk',sans-serif;font-size:14px;cursor:pointer;transition:.2s;}
+.demo-btn:hover{border-color:var(--accent);color:var(--accent);}
+.alert{padding:11px 14px;border-radius:9px;font-size:13px;margin-bottom:14px;display:none;}
+.alert.error{background:rgba(255,82,82,.1);border:1px solid rgba(255,82,82,.3);color:var(--danger);}
+.alert.success{background:rgba(0,230,118,.1);border:1px solid rgba(0,230,118,.3);color:var(--success);}
+.back-home{display:inline-flex;align-items:center;gap:6px;color:var(--text3);font-size:13px;text-decoration:none;margin-bottom:24px;transition:.2s;}
+.back-home:hover{color:var(--accent);}
+@media(max-width:900px){.left{display:none;}.right{width:100%;border-left:none;}}
+</style>
+</head>
+<body>
+<div class="orb o1"></div><div class="orb o2"></div><div class="grid-bg"></div>
+
+<!-- LEFT -->
+<div class="left">
+  <div class="brand">
+    <div class="brand-icon">🔮</div>
+    <div>
+      <div class="brand-name">ForeSight Inventory</div>
+      <div style="font-size:11px;color:var(--accent);font-weight:600;letter-spacing:1px">AI-POWERED</div>
+    </div>
+  </div>
+  <h1>Your inventory,<br><span class="grad">predicted.</span></h1>
+  <p class="left-sub">The smartest way to manage stock, forecast demand, and maximize profit — built for Indian shopkeepers.</p>
+  <div class="features">
+    <div class="feature-item"><div class="feat-icon p"></div>AI demand prediction with 20+ ML features</div>
+    <div class="feature-item"><div class="feat-icon g"></div>Smart reorder suggestions & stockout alerts</div>
+    <div class="feature-item"><div class="feat-icon y"></div>25+ Indian festival & seasonal intelligence</div>
+    <div class="feature-item"><div class="feat-icon b"></div>PDF reports, charts & budget planning</div>
+  </div>
+  <div class="bottom-stats">
+    <div><div class="bstat-num">4</div><div class="bstat-label">ML Models</div></div>
+    <div><div class="bstat-num">6</div><div class="bstat-label">Business Types</div></div>
+    <div><div class="bstat-num">25+</div><div class="bstat-label">Festivals</div></div>
+  </div>
+</div>
+
+<!-- RIGHT -->
+<div class="right">
+  <div class="auth-card">
+    <a href="/" class="back-home">← Back to Home</a>
+    <div class="tab-row">
+      <button class="tab-btn active" id="tab-login" onclick="switchTab('login')">Login</button>
+      <button class="tab-btn" id="tab-register" onclick="switchTab('register')">Register</button>
+    </div>
+    <div id="alert" class="alert"></div>
+
+    <!-- LOGIN -->
+    <div id="form-login">
+      <div class="form-group">
+        <label class="form-label">Email Address</label>
+        <input class="form-ctrl" id="l-email" type="email" placeholder="you@example.com">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Password</label>
+        <input class="form-ctrl" id="l-pass" type="password" placeholder="••••••••">
+      </div>
+      <button class="btn-submit" id="login-btn" onclick="doLogin()">Login to Dashboard →</button>
+      <div class="divider">or try demo</div>
+      <button class="demo-btn" onclick="demoLogin()"> Demo Account — One Click</button>
+    </div>
+
+    <!-- REGISTER -->
+    <div id="form-register" style="display:none">
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Full Name</label>
+          <input class="form-ctrl" id="r-name" type="text" placeholder="Ramesh Kumar">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Shop Name</label>
+          <input class="form-ctrl" id="r-shop" type="text" placeholder="Kumar Store">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Business Type</label>
+        <select class="form-ctrl" id="r-btype">
+          <option>Retail</option><option>Wholesale</option><option>FMCG Distributor</option>
+          <option>Electronics Shop</option><option>Fashion Boutique</option>
+          <option>Grocery Store</option><option>Agriculture Dealer</option><option>Stationery Shop</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Email Address</label>
+        <input class="form-ctrl" id="r-email" type="email" placeholder="you@example.com">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Password</label>
+        <input class="form-ctrl" id="r-pass" type="password" placeholder="Min 6 characters">
+      </div>
+      <button class="btn-submit" id="reg-btn" onclick="doRegister()">Create Free Account →</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast-box" style="position:fixed;bottom:24px;right:24px;z-index:9999;display:flex;flex-direction:column;gap:10px;"></div>
+
+<script>
+function showAlert(msg, type='error') {
+  const el = document.getElementById('alert');
+  el.textContent = msg; el.className = `alert ${type}`; el.style.display = 'block';
+  setTimeout(() => el.style.display='none', 5000);
+}
+function switchTab(t) {
+  document.getElementById('tab-login').classList.toggle('active', t==='login');
+  document.getElementById('tab-register').classList.toggle('active', t==='register');
+  document.getElementById('form-login').style.display    = t==='login'?'block':'none';
+  document.getElementById('form-register').style.display = t==='register'?'block':'none';
+  document.getElementById('alert').style.display = 'none';
+}
+async function doLogin() {
+  const email = document.getElementById('l-email').value.trim();
+  const pass  = document.getElementById('l-pass').value;
+  if (!email || !pass) return showAlert('Please fill in all fields');
+  const btn = document.getElementById('login-btn');
+  btn.disabled=true; btn.textContent='Logging in...';
+  try {
+    const res = await fetch('/api/auth/login',{method:'POST',credentials:'include',headers:{'Content-Type':'application/json'},body:JSON.stringify({email,password:pass})});
+    const d = await res.json();
+    if (res.ok) { showAlert('Welcome back! Redirecting...','success'); setTimeout(()=>location.href='/dashboard',700); }
+    else showAlert(d.error || 'Login failed');
+  } catch { showAlert('Server error. Is Flask running?'); }
+  btn.disabled=false; btn.textContent='Login to Dashboard →';
+}
+async function doRegister() {
+  const username=document.getElementById('r-name').value.trim();
+  const shop=document.getElementById('r-shop').value.trim();
+  const btype=document.getElementById('r-btype').value;
+  const email=document.getElementById('r-email').value.trim();
+  const pass=document.getElementById('r-pass').value;
+  if (!username||!email||!pass) return showAlert('Please fill all required fields');
+  if (pass.length<6) return showAlert('Password must be at least 6 characters');
+  const btn=document.getElementById('reg-btn');
+  btn.disabled=true; btn.textContent='Creating account...';
+  try {
+    const res=await fetch('/api/auth/register',{method:'POST',credentials:'include',headers:{'Content-Type':'application/json'},body:JSON.stringify({username,email,password:pass,shop_name:shop||username+"'s Shop",business_type:btype})});
+    const d=await res.json();
+    if (res.ok) { showAlert('Account created! Setting up your dashboard...','success'); setTimeout(()=>location.href='/dashboard',900); }
+    else showAlert(d.error||'Registration failed');
+  } catch { showAlert('Server error. Is Flask running?'); }
+  btn.disabled=false; btn.textContent='Create Free Account →';
+}
+async function demoLogin() {
+  try {
+    await fetch('/api/auth/register',{method:'POST',credentials:'include',headers:{'Content-Type':'application/json'},body:JSON.stringify({username:'Demo User',email:'demo@foresight.ai',password:'demo@123',shop_name:'ForeSight Demo Store',business_type:'Retail'})});
+  } catch {}
+  document.getElementById('l-email').value='demo@foresight.ai';
+  document.getElementById('l-pass').value='demo@123';
+  switchTab('login');
+  setTimeout(doLogin, 300);
+}
+// Auto tab from URL + switch account pre-fill
+document.addEventListener('DOMContentLoaded',()=>{
+  const params = new URLSearchParams(location.search);
+  const tab = sessionStorage.getItem('auth_tab') || params.get('tab');
+  if (tab==='register') { switchTab('register'); sessionStorage.removeItem('auth_tab'); }
+  
+  // Pre-fill email when switching accounts
+  const switchEmail = sessionStorage.getItem('switch_email');
+  if (switchEmail || params.get('switch')) {
+    const emailEl = document.getElementById('l-email');
+    if (emailEl && switchEmail) {
+      emailEl.value = switchEmail;
+      sessionStorage.removeItem('switch_email');
+      document.getElementById('l-pass')?.focus();
+      showAlert('Enter password to switch to this account', 'info');
+    }
+  }
+  
+  fetch('/api/auth/check',{credentials:'include'}).then(r=>r.json()).then(d=>{if(d.ok)location.href='/dashboard';});
+});
+document.addEventListener('keydown',e=>{if(e.key==='Enter'){const t=document.getElementById('form-login').style.display!=='none'?'login':'register';t==='login'?doLogin():doRegister();}});
+</script>
+<script src="/static/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Dashboard — ForeSight Inventory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/main.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+</head>
+<body>
+<div class="bg-orb bg-orb-1"></div><div class="bg-orb bg-orb-2"></div><div class="bg-grid"></div>
+
+<div class="app-layout">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="brand-icon"></div>
+      <div>
+        <div class="brand-name">ForeSight</div>
+        <div class="brand-tag">INVENTORY AI</div>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-group">
+        <span class="nav-group-label">Main</span>
+        <a href="/dashboard" class="nav-link active"><span class="nav-icon"></span><span class="nav-text">Dashboard</span></a>
+        <a href="/inventory" class="nav-link"><span class="nav-icon"></span><span class="nav-text">Inventory</span></a>
+        <a href="/predict" class="nav-link"><span class="nav-icon"></span><span class="nav-text">AI Predict</span></a>
+        <a href="/reports" class="nav-link"><span class="nav-icon"></span><span class="nav-text">Reports</span></a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-group-label">Analytics</span>
+        <a href="#section-trend" class="nav-link" onclick="scrollSection('section-trend')"><span class="nav-icon"></span><span class="nav-text">Sales Trends</span></a>
+        <a href="#section-seasonal" class="nav-link" onclick="scrollSection('section-seasonal')"><span class="nav-icon"></span><span class="nav-text">Seasonal</span></a>
+        <a href="#section-festival" class="nav-link" onclick="scrollSection('section-festival')"><span class="nav-icon"></span><span class="nav-text">Festival Impact</span></a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-group-label">Account</span>
+        <a href="/settings" class="nav-link"><span class="nav-icon"></span><span class="nav-text">Settings</span></a>
+      </div>
+    </nav>
+        <div class="sidebar-account" id="sidebar-account">
+      <div class="loading" style="padding:16px 0;justify-content:center"><div class="spinner"></div></div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+    <!-- TOPBAR -->
+    <div class="topbar">
+      <div class="topbar-left">
+        <div class="page-title">Dashboard</div>
+        <div class="page-sub" id="greeting">Welcome back! Here's your inventory overview.</div>
+      </div>
+      <div class="topbar-right">
+        <span id="low-stock-badge" style="display:none" class="badge badge-red"> <span id="low-stock-cnt">0</span> Low Stock</span>
+        <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">☀️</button>
+        <div class="notif-btn" onclick="toggleNotifPanel()">
+          🔔 <div class="notif-dot" id="notif-dot" style="display:none"></div>
+        </div>
+        <a href="/inventory" class="btn btn-primary btn-sm">+ Add Product</a>
+      </div>
+    </div>
+
+    <div class="page-content fade-in">
+      <!-- Sample data banner — shown only when inventory empty -->
+      <div id="sample-banner" style="display:none;background:linear-gradient(135deg,rgba(108,99,255,0.15),rgba(255,107,157,0.1));border:1px solid rgba(108,99,255,0.3);border-radius:16px;padding:20px 24px;margin-bottom:24px;align-items:center;justify-content:space-between;gap:16px">
+        <div>
+          <div style="font-family:'Outfit',sans-serif;font-size:16px;font-weight:700;margin-bottom:4px">🏪 Koi data nahi mila!</div>
+          <div style="font-size:13px;color:var(--text3)">Ramesh General Store (Bhopal) ka real kirana data load karo — 83 products, 7000 records</div>
+        </div>
+        <button class="btn btn-primary" onclick="loadSampleData()" style="white-space:nowrap;flex-shrink:0">📦 Load Sample Data</button>
+      </div>
+      <!-- STAT CARDS -->
+      <div class="stats-grid mb3">
+        <div class="stat-card c-purple slide-up delay-1">
+          <div class="stat-label">Total Revenue</div>
+          <div class="stat-val purple" id="s-revenue">₹0</div>
+          <div class="stat-change">All time</div>
+          <div class="stat-icon"></div>
+        </div>
+        <div class="stat-card c-green slide-up delay-2">
+          <div class="stat-label">Total Profit</div>
+          <div class="stat-val green" id="s-profit">₹0</div>
+          <div class="stat-change">All time</div>
+          <div class="stat-icon"></div>
+        </div>
+        <div class="stat-card c-yellow slide-up delay-3">
+          <div class="stat-label">Avg Margin</div>
+          <div class="stat-val yellow" id="s-margin">0%</div>
+          <div class="stat-change">Across all products</div>
+          <div class="stat-icon"></div>
+        </div>
+        <div class="stat-card c-blue slide-up delay-4">
+          <div class="stat-label">Units Sold</div>
+          <div class="stat-val blue" id="s-units">0</div>
+          <div class="stat-change">All time</div>
+          <div class="stat-icon"></div>
+        </div>
+        <div class="stat-card c-purple slide-up delay-5">
+          <div class="stat-label">Products</div>
+          <div class="stat-val purple" id="s-products">0</div>
+          <div class="stat-change">In inventory</div>
+          <div class="stat-icon"></div>
+        </div>
+        <div class="stat-card c-red">
+          <div class="stat-label">Low Stock Alerts</div>
+          <div class="stat-val red" id="s-lowstock">0</div>
+          <div class="stat-change">Need reorder</div>
+          <div class="stat-icon"></div>
+        </div>
+      </div>
+
+      <!-- CHARTS ROW 1 -->
+      <div class="g2 mb3" id="section-trend">
+        <div class="card">
+          <div class="card-title"> Monthly Revenue & Profit</div>
+          <div class="card-sub">Track earnings over time</div>
+          <div class="chart-wrap" style="height:260px"><canvas id="chart-monthly"></canvas></div>
+        </div>
+        <div class="card">
+          <div class="card-title"> Sales by Category</div>
+          <div class="card-sub">Revenue breakdown by business type</div>
+          <div class="chart-wrap" style="height:260px"><canvas id="chart-category"></canvas></div>
+        </div>
+      </div>
+
+      <!-- CHARTS ROW 2 -->
+      <div class="g2 mb3">
+        <div class="card" id="section-seasonal">
+          <div class="card-title"> Seasonal Performance</div>
+          <div class="card-sub">Profit & revenue by season</div>
+          <div class="chart-wrap" style="height:240px"><canvas id="chart-season"></canvas></div>
+        </div>
+        <div class="card" id="section-festival">
+          <div class="card-title"> Festival Impact</div>
+          <div class="card-sub">Sales boost during Indian festivals</div>
+          <div class="chart-wrap" style="height:240px"><canvas id="chart-festival"></canvas></div>
+        </div>
+      </div>
+
+      <!-- TOP PRODUCTS + LOW STOCK -->
+      <div class="g21 mb3">
+        <div class="card">
+          <div class="flex justify-between items-center mb3">
+            <div>
+              <div class="card-title"> Top Products by Profit</div>
+              <div class="card-sub">Best performing products</div>
+            </div>
+            <a href="/predict" class="btn btn-secondary btn-sm">🔮 Predict</a>
+          </div>
+          <div class="tbl-wrap">
+            <table class="tbl">
+              <thead><tr>
+                <th>#</th><th>Product</th><th>Category</th>
+                <th class="num">Units</th><th class="num">Revenue</th>
+                <th class="num">Profit</th><th>Margin</th>
+              </tr></thead>
+              <tbody id="tbl-top-products">
+                <tr><td colspan="7"><div class="loading"><div class="spinner"></div>Loading...</div></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title mb1"> Low Stock Alerts</div>
+          <div class="card-sub">Products needing reorder</div>
+          <div id="low-stock-list"><div class="loading"><div class="spinner"></div></div></div>
+        </div>
+      </div>
+
+      <!-- CATEGORY BREAKDOWN -->
+      <div class="card mb3">
+        <div class="card-title mb1"> Category Performance Breakdown</div>
+        <div class="card-sub">Revenue, profit, and margin by category</div>
+        <div id="cat-breakdown">
+          <div class="loading"><div class="spinner"></div>Loading...</div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<div id="toast-box" class="toast-box"></div>
+<script src="/static/js/main.js"></script>
+<script src="/static/js/dashboard.js"></script>
+</body>
+</html>
