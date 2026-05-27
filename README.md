@@ -1,11 +1,11 @@
 <<<<<<< HEAD
-# 🔮 ForeSight Inventory — AI-Powered Smart Inventory Management
+#  ForeSight Inventory — AI-Powered Smart Inventory Management
 
 > Production-grade AI inventory system for Indian retailers, wholesalers, and shopkeepers.
 
 ---
 
-## 🚀 Quick Start (3 Steps)
+##  Quick Start (3 Steps)
 
 ### Step 1: Install Dependencies
 ```bash
@@ -31,7 +31,7 @@ Open your browser: **http://localhost:5000**
 
 ---
 
-## 🔑 Demo Account
+##  Demo Account
 - **Email:** `demo@foresight.ai`
 - **Password:** `demo@123`
 
@@ -39,7 +39,7 @@ Or click **"Demo Account — One Click"** on the login page.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 foresight2/
@@ -99,9 +99,9 @@ foresight2/
 
 ---
 
-## ✨ Full Feature List
+##  Full Feature List
 
-### 🔮 AI / ML Features
+###  AI / ML Features
 - **Sales Prediction** — XGBoost with 23 features predicts monthly units sold
 - **Profit Forecasting** — Predict revenue, profit, and ROI before investing
 - **Demand Classification** — High / Medium / Low demand with probability bars
@@ -112,7 +112,7 @@ foresight2/
 - **Unknown Product Handling** — Falls back to category-level estimates
 - **Model Retraining** — Retrain on your own data when you have 20+ records
 
-### 📊 Dashboard
+###  Dashboard
 - 6 KPI stat cards (Revenue, Profit, Margin, Units, Products, Low Stock)
 - Monthly revenue & profit trend chart (bar + line combo)
 - Category revenue breakdown (doughnut chart)
@@ -121,7 +121,7 @@ foresight2/
 - Top 10 products table ranked by profit
 - Low stock alerts with progress bars
 
-### 📦 Inventory Management
+###  Inventory Management
 - Full CRUD (Add, Edit, Delete)
 - SKU auto-generation
 - Live margin preview while typing
@@ -130,7 +130,7 @@ foresight2/
 - CSV bulk import with column auto-mapping
 - Download CSV template
 
-### 📋 Reports
+###  Reports
 - **PDF Export** — Professional report with summary, top products, season trends
 - **CSV Export** — Full inventory data download
 - **AI Insights** — Auto-generated business analysis
@@ -140,15 +140,15 @@ foresight2/
 - Festival impact (dual-axis chart)
 - Category trends over time (multi-line)
 
-### 🎉 Indian Festival & Season Intelligence
+###  Indian Festival & Season Intelligence
 25+ festivals: Diwali, Holi, Eid, Christmas, Navratri, Dussehra, Raksha Bandhan, Janmashtami, Onam, Pongal, Makar Sankranti, Ganesh Chaturthi, Chhath Puja, Baisakhi, Lohri, Maha Shivratri, Basant Panchami, Bihu, Ugadi, Republic Day, Independence Day, Valentine's Day, New Year, Labour Day, Children's Day
 
 4 Seasons: Summer, Winter, Rainy, Autumn
 
-### 🏪 Business Categories
+###  Business Categories
 FMCG, Electronics, Fashion, Grocery, Stationery, Agriculture
 
-### ⚙️ Settings
+###  Settings
 - Profile management (name, shop, business type, avatar color)
 - Password change
 - Currency preference (INR/USD/EUR)
@@ -157,7 +157,7 @@ FMCG, Electronics, Fashion, Grocery, Stationery, Agriculture
 - Model retrain trigger
 - Data delete
 
-### 👤 Auth & Security
+###  Auth & Security
 - Session-based authentication
 - Password hashing (SHA-256)
 - Admin mode (set role='admin' in DB)
@@ -166,7 +166,7 @@ FMCG, Electronics, Fashion, Grocery, Stationery, Agriculture
 
 ---
 
-## 📋 CSV Upload Format
+##  CSV Upload Format
 
 **Required columns:**
 ```
@@ -185,7 +185,7 @@ region, date, sku
 
 ---
 
-## 🤖 ML Model Details
+##  ML Model Details
 
 | Model | Algorithm | Target | Key Features |
 |-------|-----------|--------|-------------|
@@ -199,7 +199,7 @@ Day_of_Week, Month, Week, Year, Day, Quarter, Season_enc, Festival_enc, Category
 
 ---
 
-## 🔧 Troubleshooting
+##  Troubleshooting
 
 **Port in use:**
 ```bash
