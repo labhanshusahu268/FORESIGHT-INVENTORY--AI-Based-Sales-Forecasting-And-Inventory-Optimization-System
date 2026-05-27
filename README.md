@@ -1,0 +1,2 @@
+# FORESIGHT-INVENTORY--AI-Based-Sales-Forecasting-And-Inventory-Optimization-System
+ForeSight Inventory is an AI-powered smart inventory management and demand forecasting system built using Flask, Machine Learning, Random Forest, and XGBoost. It predicts future product sales, optimizes stock levels, and provides intelligent reorder recommendations using seasonal, festival, and historical sales insights.
