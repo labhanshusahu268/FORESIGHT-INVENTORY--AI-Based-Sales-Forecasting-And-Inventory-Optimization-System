@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🔮 ForeSight Inventory — AI-Powered Smart Inventory Management
 
 > Production-grade AI inventory system for Indian retailers, wholesalers, and shopkeepers.
@@ -224,3 +225,7 @@ pip install reportlab
 ---
 
 Built with ❤️ for Indian shopkeepers | Flask + XGBoost + Chart.js 4 | Dark Glassmorphism UI
+=======
+# FORESIGHT-INVENTORY--AI-Based-Sales-Forecasting-And-Inventory-Optimization-System
+ForeSight Inventory is an AI-powered smart inventory management and demand forecasting system built using Flask, Machine Learning, Random Forest, and XGBoost. It predicts future product sales, optimizes stock levels, and provides intelligent reorder recommendations using seasonal, festival, and historical sales insights.
+>>>>>>> 2dd7beda3aa7cab8586b3dff9e0459caa9c35e3f
